@@ -651,7 +651,7 @@ function Footer() {
           {[
             { href: "mailto:pratheek.eranki@gmail.com", icon: <Mail size={18} /> },
             { href: "https://github.com/PratheekEranki", icon: <Github size={18} /> },
-            { href: "https://www.linkedin.com/in/pratheek-eranki-84657b424", icon: <Linkedin size={18} /> },
+            { href: "https://www.linkedin.com/in/pratheekeranki64", icon: <Linkedin size={18} /> },
             { href: "tel:+19019028689", icon: <Phone size={18} /> },
           ].map(({ href, icon }) => (
             <a key={href} href={href} target={href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" style={{ color: C.gray500, transition: "color 0.2s" }}
