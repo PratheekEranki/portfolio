@@ -23,12 +23,12 @@ const C = {
 
 /* ── Data ──────────────────────────────────────────────── */
 const skills = [
-  { category: "AI & Machine Learning",       items: ["PyTorch", "TensorFlow", "scikit-learn", "XGBoost", "LightGBM", "HuggingFace Transformers", "LangChain", "FAISS"] },
-  { category: "Deep Learning & NLP",         items: ["CNNs", "Transformers", "LSTM / GRU", "RAG Pipelines", "LLMs", "Fine-tuning", "Mamba", "Self-Supervised Learning"] },
-  { category: "Data Engineering",            items: ["Python", "SQL", "PySpark", "Airflow", "dbt", "MLflow", "ETL Pipelines", "Pandas / NumPy"] },
+  { category: "Software Engineering",        items: ["Java", "Spring Boot", "Python", "FastAPI", "Node.js", "REST APIs", "Microservices", "PostgreSQL", "MongoDB"] },
+  { category: "Full Stack & Web",            items: ["React", "JavaScript", "TypeScript", "HTML / CSS", "Git", "Agile / Scrum", "Postman", "VS Code"] },
+  { category: "Data Analytics",             items: ["SQL", "Tableau", "Power BI", "Looker Studio", "R", "Excel", "Pandas", "Matplotlib / Seaborn"] },
+  { category: "AI & Machine Learning",       items: ["PyTorch", "scikit-learn", "XGBoost", "HuggingFace Transformers", "LangChain", "FAISS", "MLflow"] },
+  { category: "Data Engineering",            items: ["PySpark", "Airflow", "dbt", "ETL Pipelines", "Snowflake", "BigQuery", "Kafka", "NumPy"] },
   { category: "Cloud & DevOps",              items: ["AWS (Certified)", "Azure (Certified)", "GCP", "Docker", "Kubernetes", "GitHub Actions", "CI/CD"] },
-  { category: "Software Engineering",        items: ["Spring Boot", "FastAPI", "REST APIs", "Microservices", "Java", "Node.js", "PostgreSQL", "MongoDB"] },
-  { category: "Biomedical & Research",       items: ["EEG Signal Processing", "fMRI Analysis", "Foundation Models", "Clinical AI", "ISRUC Dataset", "KITTI Dataset"] },
 ];
 
 const experience = [
@@ -80,6 +80,7 @@ const experience = [
 const projects = [
   {
     name: "Attention-Based RAG Academic QA System",
+    tag: "AI/ML",
     tools: ["Python", "FAISS", "Mistral-7B", "LangChain", "Gradio", "bitsandbytes"],
     bullets: [
       "Built a local RAG system with a 4-route smart router (document RAG, math/direct, web-grounded via DuckDuckGo, fallback LLM) — improved BLEU-1 from 0.22 → 0.24 and ROUGE-1 from 0.33 → 0.35 over base Mistral generation.",
@@ -88,42 +89,47 @@ const projects = [
   },
   {
     name: "Air Quality Level Prediction & Clustering",
-    tools: ["Python", "scikit-learn", "XGBoost", "K-Means", "t-SNE", "UMAP", "Pandas"],
+    tag: "Data",
+    tools: ["Python", "scikit-learn", "XGBoost", "K-Means", "t-SNE", "Pandas", "Matplotlib"],
     bullets: [
       "Trained an end-to-end ML pipeline on 1.2M+ hourly pollution records from 200+ global cities, achieving 99.9% AQI category prediction accuracy with Random Forest.",
-      "Applied K-Means clustering (k=5) to uncover distinct pollution regimes including extreme industrial events across global city clusters.",
+      "Applied K-Means clustering (k=5) and t-SNE visualizations to surface distinct pollution regimes — findings presented as an interactive dashboard.",
     ],
   },
   {
-    name: "CBraMod — EEG Sleep Stage Classification",
-    tools: ["PyTorch", "CBraMod", "Criss-Cross Transformer", "ISRUC-Sleep Dataset", "AdamW"],
+    name: "Bank Marketing Campaign Response Prediction",
+    tag: "Data",
+    tools: ["R", "Logistic Regression", "Cross-validation", "ROC / AUC", "ggplot2"],
     bullets: [
-      "Fine-tuned CBraMod pretrained EEG foundation model on ISRUC sleep staging for 5-class classification using criss-cross transformer attention for cross-channel feature extraction.",
-      "Applied label smoothing and gradient clipping for stable training across 50 epochs on clinical EEG data.",
+      "Built a logistic regression model on the UCI Bank Marketing dataset to predict customer subscription likelihood for term deposits, with full statistical evaluation via ROC/AUC.",
+      "Cleaned and engineered features across 45,000+ records; model achieved strong AUC enabling targeted campaign prioritization.",
     ],
   },
   {
-    name: "YOLOv8 Object Detection — Autonomous Driving",
-    tools: ["YOLOv8", "PyTorch", "KITTI Dataset", "Python"],
+    name: "Movie Popularity Prediction & Recommendation",
+    tag: "Data",
+    tools: ["Python", "R", "KNN", "Random Forest", "TMDB API", "Pandas"],
     bullets: [
-      "Trained YOLOv8s on the KITTI autonomous driving dataset for multi-class detection (cars, pedestrians, cyclists) with a custom KITTI→YOLO annotation pipeline.",
-      "Extracted per-class mAP@0.5, mAP@0.5:0.95, Precision, Recall, and F1 metrics from best checkpoint for comprehensive evaluation.",
-    ],
-  },
-  {
-    name: "Hybrid CNN-Transformer for Chest X-Ray Classification",
-    tools: ["PyTorch", "CNN", "Transformer", "Chest X-Ray Pneumonia Dataset"],
-    bullets: [
-      "Designed a hybrid architecture combining CNN spatial feature extraction with Transformer self-attention for pneumonia detection from chest X-rays.",
-      "Evaluated multi-class classification accuracy, precision, recall, and F1 on the Kaggle Chest X-Ray Pneumonia dataset.",
+      "Built classification models (KNN and Random Forest) to predict movie success and popularity using the TMDB dataset spanning 1980–present.",
+      "Integrated TMDB API for live data ingestion; performed genre/decade trend analysis to surface actionable content insights.",
     ],
   },
   {
     name: "Attention-Based Stock Price Forecasting",
+    tag: "AI/ML",
     tools: ["PyTorch", "LSTM", "GRU", "Transformer", "yfinance API"],
     bullets: [
       "Compared LSTM, GRU, and Transformer architectures for next-day closing price prediction on Walmart stock (1970–2018) using a 60-day lookback sliding window.",
-      "Transformer attention outperformed LSTM and GRU baselines on long-horizon patterns as measured by MAE and RMSE on a held-out test set.",
+      "Transformer attention outperformed both LSTM and GRU baselines on long-horizon pattern recognition as measured by MAE and RMSE on a held-out test set.",
+    ],
+  },
+  {
+    name: "YOLOv8 Object Detection — Autonomous Driving",
+    tag: "AI/ML",
+    tools: ["YOLOv8", "PyTorch", "KITTI Dataset", "Python"],
+    bullets: [
+      "Trained YOLOv8s on the KITTI autonomous driving dataset for multi-class detection (cars, pedestrians, cyclists) with a custom KITTI→YOLO annotation preprocessing pipeline.",
+      "Extracted per-class mAP@0.5, mAP@0.5:0.95, Precision, Recall, and F1 metrics from best checkpoint for comprehensive benchmarking.",
     ],
   },
 ];
@@ -266,15 +272,16 @@ function Hero() {
             Pratheek Eranki
           </h1>
           <h2 style={{ fontSize: "clamp(1.1rem, 3vw, 1.5rem)", fontWeight: 400, color: C.accent, margin: "0 0 1.5rem", letterSpacing: "-0.01em" }}>
-            AI/ML Engineer · Biomedical AI · LLM Systems
+            Software Engineer · Data Analyst · AI/ML Engineer
           </h2>
         </FadeIn>
 
         <FadeIn delay={0.2}>
           <p style={{ fontSize: "1.05rem", color: C.gray300, lineHeight: 1.85, maxWidth: 680, margin: "0 0 2.5rem" }}>
-            MS Data Science candidate at the University of Memphis (GPA 3.87) with hands-on experience in
-            clinical AI at St. Jude Children's Research Hospital, self-supervised learning research
-            published on arXiv, and enterprise-scale software engineering at Cognizant.
+            MS Data Science candidate at the University of Memphis (GPA 3.87) with 2+ years of
+            enterprise software engineering at Cognizant, hands-on AI/ML research at St. Jude
+            Children's Research Hospital, and a published arXiv paper. Comfortable across the full
+            stack — from backend APIs and databases to data pipelines, dashboards, and ML systems.
           </p>
         </FadeIn>
 
@@ -325,9 +332,9 @@ function Hero() {
           <div style={{ display: "flex", gap: "3rem", flexWrap: "wrap", borderTop: `1px solid ${C.slate}`, paddingTop: "2rem" }}>
             {[
               { value: "3.87 GPA", label: "University of Memphis" },
-              { value: "1 Publication", label: "arXiv · May 2026" },
+              { value: "2+ Years", label: "Industry Experience" },
               { value: "3 Certs", label: "AWS · Azure · DL Spec." },
-              { value: "6+ Projects", label: "ML & AI Systems" },
+              { value: "6+ Projects", label: "Full Stack · Data · AI" },
             ].map(s => (
               <div key={s.label}>
                 <div style={{ color: C.white, fontWeight: 700, fontSize: "1.05rem" }}>{s.value}</div>
@@ -374,7 +381,7 @@ function Skills() {
   return (
     <section id="skills" style={{ padding: "7rem 2rem", background: C.white }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <SectionHeading icon={<Code2 size={16} />} label="Capabilities" title="Technical Skills" subtitle="A full-stack toolkit spanning AI research, production engineering, and cloud infrastructure." />
+        <SectionHeading icon={<Code2 size={16} />} label="Capabilities" title="Technical Skills" subtitle="A versatile toolkit spanning software development, data analytics, AI/ML, and cloud infrastructure." />
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(310px, 1fr))", gap: "1.25rem", marginTop: "3rem" }}>
           {skills.map((s, i) => (
             <FadeIn key={s.category} delay={i * 0.07}>
@@ -415,7 +422,7 @@ function Experience() {
   return (
     <section id="experience" style={{ padding: "7rem 2rem", background: C.gray50 }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <SectionHeading icon={<Briefcase size={16} />} label="Career" title="Work Experience" subtitle="From enterprise microservices to clinical AI and published research." />
+        <SectionHeading icon={<Briefcase size={16} />} label="Career" title="Work Experience" subtitle="Enterprise software engineering, data pipelines, AI research, and clinical systems — across multiple domains." />
         <div style={{ display: "grid", gridTemplateColumns: "270px 1fr", gap: "2rem", marginTop: "3rem" }} className="exp-grid">
           {/* Tab list */}
           <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
@@ -466,14 +473,40 @@ function Experience() {
   );
 }
 
+const TAG_COLORS = {
+  "AI/ML": { bg: `${C.accent}15`, color: C.accent },
+  "Data":  { bg: "#10B98115", color: "#059669" },
+};
+
 function Projects() {
+  const [filter, setFilter] = useState("All");
+  const filters = ["All", "AI/ML", "Data"];
+  const visible = filter === "All" ? projects : projects.filter(p => p.tag === filter);
+
   return (
     <section id="projects" style={{ padding: "7rem 2rem", background: C.white }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <SectionHeading icon={<Code2 size={16} />} label="Portfolio" title="Selected Projects" subtitle="End-to-end ML systems, clinical AI tools, and research implementations." />
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(330px, 1fr))", gap: "1.5rem", marginTop: "3rem" }}>
-          {projects.map((p, i) => (
-            <FadeIn key={i} delay={i * 0.06}>
+        <SectionHeading icon={<Code2 size={16} />} label="Portfolio" title="Selected Projects" subtitle="Web apps, data pipelines, analytics dashboards, and AI/ML systems — across multiple domains." />
+
+        {/* Filter tabs */}
+        <div style={{ display: "flex", gap: "0.6rem", marginTop: "2.5rem", flexWrap: "wrap" }}>
+          {filters.map(f => (
+            <button key={f} onClick={() => setFilter(f)} style={{
+              padding: "8px 20px", borderRadius: 100,
+              fontWeight: 600, fontSize: "0.85rem", cursor: "pointer",
+              border: `1px solid ${filter === f ? C.accent : C.gray100}`,
+              background: filter === f ? C.accent : "#fff",
+              color: filter === f ? "#fff" : C.gray500,
+              transition: "all 0.18s",
+            }}>
+              {f === "All" ? `All (${projects.length})` : `${f} (${projects.filter(p => p.tag === f).length})`}
+            </button>
+          ))}
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(330px, 1fr))", gap: "1.5rem", marginTop: "1.5rem" }}>
+          {visible.map((p, i) => (
+            <FadeIn key={p.name} delay={i * 0.06}>
               <div style={{
                 background: "#fff", borderRadius: 14, padding: "1.75rem",
                 border: `1px solid ${C.gray100}`,
@@ -487,14 +520,19 @@ function Projects() {
               >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1rem" }}>
                   <h3 style={{ margin: 0, fontSize: "0.97rem", fontWeight: 700, color: C.text, lineHeight: 1.45, flex: 1, paddingRight: "0.5rem" }}>{p.name}</h3>
-                  <ArrowUpRight size={16} color={C.gray300} style={{ flexShrink: 0, marginTop: 2 }} />
+                  <span style={{
+                    flexShrink: 0, fontSize: "0.7rem", fontWeight: 700,
+                    padding: "3px 10px", borderRadius: 100,
+                    background: TAG_COLORS[p.tag]?.bg, color: TAG_COLORS[p.tag]?.color,
+                  }}>{p.tag}</span>
                 </div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", marginBottom: "1.25rem" }}>
                   {p.tools.map(t => (
                     <span key={t} style={{
-                      background: `${C.accent}0F`, color: C.accent,
+                      background: C.gray50, color: C.gray700,
+                      border: `1px solid ${C.gray100}`,
                       padding: "3px 10px", borderRadius: 5,
-                      fontSize: "0.74rem", fontWeight: 600,
+                      fontSize: "0.74rem", fontWeight: 500,
                     }}>{t}</span>
                   ))}
                 </div>
