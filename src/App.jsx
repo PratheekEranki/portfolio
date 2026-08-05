@@ -312,7 +312,7 @@ function Hero() {
             >
               <Github size={16} /> GitHub
             </a>
-            <a href="https://www.linkedin.com/in/pratheek-eranki-84657b424" target="_blank" rel="noreferrer" style={{
+            <a href="https://www.linkedin.com/in/pratheekeranki64" target="_blank" rel="noreferrer" style={{
               display: "inline-flex", alignItems: "center", gap: 8,
               background: "transparent", color: C.white, padding: "13px 28px",
               borderRadius: 9, fontWeight: 600, textDecoration: "none", fontSize: "0.95rem",
