@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-hidden="true">
+  <style>
+    .row { animation: slide 4.5s ease-in-out infinite; }
+    .r2 { animation-delay: .5s; } .r3 { animation-delay: 1s; } .r4 { animation-delay: 1.5s; }
+    .bar { transform-box: fill-box; transform-origin: bottom; animation: grow 3s ease-in-out infinite alternate; }
+    .b2 { animation-delay: .3s; } .b3 { animation-delay: .6s; } .b4 { animation-delay: .9s; } .b5 { animation-delay: 1.2s; } .b6 { animation-delay: 1.5s; }
+    .trend { stroke-dasharray: 520; stroke-dashoffset: 520; animation: draw 4s ease-in-out infinite; }
+    @keyframes slide { 0%, 20% { opacity: .35; transform: translateX(-10px); } 40%, 100% { opacity: 1; transform: none; } }
+    @keyframes grow { from { transform: scaleY(.6); } }
+    @keyframes draw { 50%, 100% { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .row, .bar, .trend { animation: none; stroke-dashoffset: 0; } }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1L8 5L1 9" fill="none" stroke="#5cc8f0" stroke-width="1.6"/></marker>
+  </defs>
+  <rect width="1200" height="340" fill="#18191d"/>
+  <g>
+    <rect x="70" y="70" width="190" height="230" rx="8" fill="#1f2126" stroke="#2f3138"/>
+    <rect x="55" y="55" width="190" height="230" rx="8" fill="#222429" stroke="#3a3d45"/>
+    <rect x="40" y="40" width="190" height="230" rx="8" fill="#26282e" stroke="#3a3d45"/>
+    <rect x="60" y="62" width="70" height="10" rx="5" fill="#a487ff"/>
+    <g fill="#6b6f78"><rect x="60" y="90" width="150" height="6" rx="3"/><rect x="60" y="106" width="130" height="6" rx="3"/><rect x="60" y="122" width="145" height="6" rx="3"/><rect x="60" y="138" width="100" height="6" rx="3"/><rect x="60" y="170" width="150" height="6" rx="3"/><rect x="60" y="186" width="120" height="6" rx="3"/><rect x="60" y="202" width="140" height="6" rx="3"/></g>
+    <rect x="60" y="232" width="62" height="20" rx="4" fill="#5cc8f0" opacity=".25"/>
+  </g>
+  <path d="M285 170 H350" stroke="#5cc8f0" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="375" y="60" width="330" height="220" rx="8" fill="#1f2126" stroke="#2f3138"/>
+  <rect x="375" y="60" width="330" height="36" rx="8" fill="#2a2c32"/>
+  <rect x="375" y="86" width="330" height="10" fill="#2a2c32"/>
+  <g font-family="monospace" font-size="12" fill="#9ea1a8"><text x="392" y="83">bill</text><text x="482" y="83">state</text><text x="562" y="83">year</text><text x="632" y="83">status</text></g>
+  <g fill="#3a3d45">
+    <g class="row"><rect x="392" y="112" width="70" height="8" rx="4"/><rect x="482" y="112" width="40" height="8" rx="4"/><rect x="562" y="112" width="44" height="8" rx="4"/><rect x="632" y="112" width="56" height="8" rx="4" fill="#5cc8f0" opacity=".6"/></g>
+    <g class="row r2"><rect x="392" y="146" width="60" height="8" rx="4"/><rect x="482" y="146" width="40" height="8" rx="4"/><rect x="562" y="146" width="44" height="8" rx="4"/><rect x="632" y="146" width="56" height="8" rx="4" fill="#a487ff" opacity=".6"/></g>
+    <g class="row r3"><rect x="392" y="180" width="74" height="8" rx="4"/><rect x="482" y="180" width="40" height="8" rx="4"/><rect x="562" y="180" width="44" height="8" rx="4"/><rect x="632" y="180" width="56" height="8" rx="4" fill="#5cc8f0" opacity=".6"/></g>
+    <g class="row r4"><rect x="392" y="214" width="64" height="8" rx="4"/><rect x="482" y="214" width="40" height="8" rx="4"/><rect x="562" y="214" width="44" height="8" rx="4"/><rect x="632" y="214" width="56" height="8" rx="4" fill="#a487ff" opacity=".6"/></g>
+  </g>
+  <g stroke="#2a2c32"><path d="M375 132H705M375 166H705M375 200H705M375 234H705"/></g>
+  <path d="M730 170 H795" stroke="#5cc8f0" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="820" y="40" width="340" height="260" rx="8" fill="#1f2126" stroke="#2f3138"/>
+  <g stroke="#2a2c32"><path d="M850 110H1130M850 170H1130M850 230H1130"/></g>
+  <path d="M850 270H1130" stroke="#3a3d45"/>
+  <g fill="#5cc8f0">
+    <rect class="bar" x="866" y="190" width="28" height="80" rx="3"/>
+    <rect class="bar b2" x="910" y="150" width="28" height="120" rx="3"/>
+    <rect class="bar b3" x="954" y="200" width="28" height="70" rx="3"/>
+    <rect class="bar b4" x="998" y="120" width="28" height="150" rx="3"/>
+    <rect class="bar b5" x="1042" y="165" width="28" height="105" rx="3"/>
+    <rect class="bar b6" x="1086" y="100" width="28" height="170" rx="3"/>
+  </g>
+  <polyline class="trend" points="880,150 924,118 968,160 1012,90 1056,128 1100,70" fill="none" stroke="#a487ff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <g fill="#a487ff"><circle cx="880" cy="150" r="4"/><circle cx="924" cy="118" r="4"/><circle cx="968" cy="160" r="4"/><circle cx="1012" cy="90" r="4"/><circle cx="1056" cy="128" r="4"/><circle cx="1100" cy="70" r="4"/></g>
+  <g font-family="monospace" font-size="13" fill="#9ea1a8">
+    <text x="40" y="324">legislative records</text>
+    <text x="705" y="324" text-anchor="end">standardized SQL</text>
+    <text x="1160" y="324" text-anchor="end">analysis</text>
+  </g>
+</svg>

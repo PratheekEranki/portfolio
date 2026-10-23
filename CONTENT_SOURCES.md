@@ -48,6 +48,10 @@ The general resume supplies the listed AWS, Azure, Anthropic, and Python credent
 
 The owner requested a broader resume skills inventory and omission of the bachelor's entry from the resume. `resumeSkills` is separate from the website's compact, project-linked skill groups. Skills draw from the owner's supplied reference resume, confirmed use of TensorFlow / PyTorch / Transformers / Mamba at St. Jude, and the inspected project dependencies and implementations: Academic RAG, DemandSense, SegmentWise, DriftBoard, OpsFlow, HomeSearch, the customer-operations agent, Spark fraud ETL, and CBraMod EEG preparation. Architectures, frameworks, applications, and delivery tools are grouped separately. Listing a skill does not add a new responsibility, scale claim, or proficiency rating to the approved employment descriptions.
 
+## Hero highlights and experience tools
+
+Added October 23, 2026. Hero highlights use only facts already on the site: Cognizant dates (October 2021-April 2024, about 2.5 years), the Rhamba acceptance reported on its arXiv record, the case-study count, and the M.S. GPA. Experience tool chips list only tools named in that role's approved bullets; a content test enforces both.
+
 ## Expanded employment descriptions
 
 At the owner's request, each role now has five expanded bullets shared by the website and generated resume. St. Jude adds the owner-confirmed PyTorch, TensorFlow, Transformer, and Mamba work, with CBraMod and self-supervised experiment context from the supplied resume. Memphis adds reference-supported LegiScan API, SQL / Excel preparation, demographic alignment, Tableau, and Plotly details. Cognizant adds reference-supported Java / Spring Boot, React / TypeScript, MySQL, testing, Docker / AWS / CI/CD, and Agile details. Existing role names, employment dates, and summaries take precedence over conflicting reference-resume content. Numerical scale and performance claims were not imported. The website now also includes the expanded resume skills and omits the bachelor's entry from its education display.

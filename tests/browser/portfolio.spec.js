@@ -7,6 +7,7 @@ test('page, assets, resume, and metadata load without errors', async ({ page, re
   page.on('pageerror', (e) => errors.push(e.message));
   await page.goto('./');
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Building software.');
+  await expect(page.getByRole('list', { name: 'Highlights' }).getByRole('listitem')).toHaveCount(4);
   for (const asset of [
     'Pratheek-Eranki-Resume.pdf',
     'Pratheek-Eranki-Resume.tex',
@@ -156,6 +157,27 @@ test('homepage and case study pass automated accessibility checks', async ({ pag
     .locator('.project-grid')
     .getByRole('link', { name: 'Read Academic RAG QA case study', exact: true })
     .click();
+  expect(
+    (await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze())
+      .violations,
+  ).toEqual([]);
+});
+
+test('dark theme is the default and the light theme toggles, persists, and stays accessible', async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto('./');
+  const background = () =>
+    page.evaluate(() => getComputedStyle(document.documentElement).backgroundColor);
+  expect(await background()).toBe('rgb(17, 18, 20)');
+  await page.getByRole('button', { name: 'Switch to light theme' }).click();
+  expect(await background()).toBe('rgb(243, 243, 240)');
+  await page.reload();
+  await expect(page.getByRole('button', { name: 'Switch to dark theme' })).toBeVisible();
+  expect(await page.locator('html').getAttribute('data-theme')).toBe('light');
+  await page.screenshot({ path: 'test-results/preview-1440-light.png' });
   expect(
     (await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze())
       .violations,

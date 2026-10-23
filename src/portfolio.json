@@ -3,7 +3,13 @@
     "name": "Pratheek Eranki",
     "title": "Software Engineer · AI & Data",
     "headline": "Building software. Making data useful.",
-    "intro": "I work across software engineering and research data workflows. My experience spans enterprise application delivery, sleep EEG and fMRI data preparation, and legislative data analysis. My projects explore full-stack applications, AI agents, and machine learning.",
+    "intro": "I work across software engineering and research data workflows, from enterprise applications to sleep EEG and fMRI research, and build full-stack, AI agent, and machine learning projects.",
+    "highlights": [
+      { "value": "2.5 yrs", "label": "Enterprise software delivery at Cognizant" },
+      { "value": "1 paper", "label": "Co-authored, accepted in Computers in Biology and Medicine" },
+      { "value": "18", "label": "Project case studies with linked evidence" },
+      { "value": "3.87", "label": "GPA, M.S. in Data Science" }
+    ],
     "email": "pratheek.eranki@gmail.com",
     "phone": "+1 901-902-8689",
     "location": "St. Charles, MO",
@@ -20,6 +26,9 @@
       "period": "September 2025 – May 2026",
       "location": "Memphis, TN",
       "summary": "Contributed to software and data workflows supporting sleep EEG and fMRI research in a clinical research environment.",
+      "stack": ["PyTorch", "TensorFlow", "Transformers", "Mamba", "CBraMod"],
+      "image": "images/experience/st-jude.svg",
+      "imageAlt": "Illustration of multichannel sleep EEG traces beside an fMRI voxel grid.",
       "bullets": [
         "Prepared and validated sleep EEG and fMRI data for downstream research analysis, resolving data-quality and formatting issues while maintaining traceable processing steps.",
         "Used PyTorch and TensorFlow in research workflows involving Transformers, self-attention, and Mamba architectures; supported model preparation, training, and fine-tuning experiments.",
@@ -35,6 +44,9 @@
       "period": "March 2025 – August 2025",
       "location": "Memphis, TN",
       "summary": "Conducted data-focused research using legislative records obtained through LegiScan.",
+      "stack": ["LegiScan API", "SQL", "Excel", "Tableau", "Plotly"],
+      "image": "images/experience/memphis.svg",
+      "imageAlt": "Illustration of legislative documents flowing into a standardized table and then into charts.",
       "bullets": [
         "Built reproducible workflows to collect legislative records through the LegiScan API, clean source data, and organize structured SQL datasets for research analysis.",
         "Standardized bill identifiers, jurisdictions, legislative status, sponsors, and subject classifications to support consistent comparisons across legislative records.",
@@ -50,6 +62,9 @@
       "period": "October 2021 – April 2024",
       "location": "Hyderabad, India",
       "summary": "Contributed to enterprise software delivery in client-facing engineering environments.",
+      "stack": ["Java", "Spring Boot", "React", "TypeScript", "MySQL", "AWS"],
+      "image": "images/experience/cognizant.svg",
+      "imageAlt": "Illustration of a React form sending a REST request to a Spring Boot service backed by MySQL.",
       "bullets": [
         "Developed and maintained Java Spring Boot application components and REST APIs within established development, testing, and release processes.",
         "Built and maintained React and TypeScript interface components for data display, form validation, and application workflows, integrating them with backend services.",

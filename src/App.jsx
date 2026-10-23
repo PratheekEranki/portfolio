@@ -11,7 +11,9 @@ import {
   Linkedin,
   Mail,
   Menu,
+  Moon,
   Search,
+  Sun,
   X,
 } from 'lucide-react';
 import content from './portfolio.json';
@@ -25,6 +27,69 @@ const projectFromHash = () =>
     ? (projectById[window.location.hash.slice(9)] ?? null)
     : null;
 const isExternal = (url) => /^https?:/.test(url);
+const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function ThemeToggle() {
+  const [theme, setTheme] = useState(() => document.documentElement.dataset.theme ?? 'dark');
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    try {
+      localStorage.setItem('theme', theme);
+    } catch {
+      // Storage can be unavailable (private mode); the theme still applies for this visit.
+    }
+  }, [theme]);
+  const next = theme === 'dark' ? 'light' : 'dark';
+  return (
+    <button
+      className="theme-toggle"
+      type="button"
+      aria-label={`Switch to ${next} theme`}
+      onClick={() => setTheme(next)}
+    >
+      {theme === 'dark' ? (
+        <Sun size={18} aria-hidden="true" />
+      ) : (
+        <Moon size={18} aria-hidden="true" />
+      )}
+    </button>
+  );
+}
+
+// Counts a highlight's leading number up once it scrolls into view; the suffix stays fixed.
+function CountUp({ value }) {
+  const [, number, suffix] = value.match(/^([\d.]+)(.*)$/) ?? [null, null, value];
+  const decimals = number?.split('.')[1]?.length ?? 0;
+  const ref = useRef(null);
+  const [shown, setShown] = useState(number ? (0).toFixed(decimals) : value);
+  useEffect(() => {
+    if (!number) return;
+    if (prefersReducedMotion()) return setShown(number);
+    let frame;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      observer.disconnect();
+      const start = performance.now();
+      const tick = (now) => {
+        const t = Math.min((now - start) / 1400, 1);
+        setShown((Number(number) * (1 - (1 - t) ** 3)).toFixed(decimals));
+        if (t < 1) frame = requestAnimationFrame(tick);
+      };
+      frame = requestAnimationFrame(tick);
+    });
+    observer.observe(ref.current);
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(frame);
+    };
+  }, [number, decimals]);
+  return (
+    <strong ref={ref}>
+      <span aria-hidden="true">{number ? `${shown}${suffix}` : value}</span>
+      <span className="sr-only">{value}</span>
+    </strong>
+  );
+}
 
 function EvidenceLink({ link, className = '' }) {
   return (
@@ -66,17 +131,20 @@ function Header() {
             Pratheek Eranki<span className="brand-role">SOFTWARE · AI · DATA</span>
           </span>
         </a>
-        <button
-          ref={toggleRef}
-          className="menu-toggle"
-          type="button"
-          aria-controls="main-navigation"
-          aria-expanded={open}
-          onClick={() => setOpen(!open)}
-        >
-          {open ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
-          {open ? 'Close' : 'Menu'}
-        </button>
+        <div className="header-actions">
+          <ThemeToggle />
+          <button
+            ref={toggleRef}
+            className="menu-toggle"
+            type="button"
+            aria-controls="main-navigation"
+            aria-expanded={open}
+            onClick={() => setOpen(!open)}
+          >
+            {open ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
+            {open ? 'Close' : 'Menu'}
+          </button>
+        </div>
         <nav
           id="main-navigation"
           aria-label="Main navigation"
@@ -111,16 +179,34 @@ function Hero() {
   const [previewId, setPreviewId] = useState(previewIds[0]);
   const preview = projectById[previewId];
   return (
-    <section id="about" className="hero">
+    <section
+      id="about"
+      className="hero"
+      onPointerMove={(event) => {
+        const box = event.currentTarget.getBoundingClientRect();
+        event.currentTarget.style.setProperty('--spot-x', `${event.clientX - box.left}px`);
+        event.currentTarget.style.setProperty('--spot-y', `${event.clientY - box.top}px`);
+      }}
+    >
+      <div className="hero-backdrop" aria-hidden="true">
+        <svg viewBox="0 0 2400 600" preserveAspectRatio="none">
+          <path d="M0 300 C150 180 250 420 400 300 S650 180 800 300 S1050 420 1200 300 S1450 180 1600 300 S1850 420 2000 300 S2250 180 2400 300" />
+          <path d="M0 380 C120 330 230 440 360 380 S600 320 720 380 S960 440 1080 380 S1320 320 1440 380 S1680 440 1800 380 S2040 320 2160 380 S2400 440 2400 380" />
+          <path d="M0 220 C200 160 300 280 480 220 S800 160 960 220 S1280 280 1440 220 S1760 160 1920 220 S2240 280 2400 220" />
+        </svg>
+      </div>
       <div className="shell hero-grid">
         <div className="hero-copy">
           <p className="availability">
             <span aria-hidden="true" />
             Open to software, AI & data roles
           </p>
-          <p className="eyebrow">PRATHEEK ERANKI / SOFTWARE ENGINEER</p>
           <h1>
-            Building software.<em>Making data useful.</em>
+            Building software.
+            <em>
+              Making data useful.
+              <span className="caret" aria-hidden="true" />
+            </em>
           </h1>
           <p className="hero-intro">{profile.intro}</p>
           <div className="hero-actions">
@@ -131,25 +217,6 @@ function Hero() {
             <a className="button button-outline" href={asset('Pratheek-Eranki-Resume.pdf')}>
               <Download size={17} aria-hidden="true" />
               View résumé
-            </a>
-          </div>
-          <div className="hero-context">
-            <span>Enterprise engineering</span>
-            <span>Research data</span>
-            <span>Applied AI</span>
-          </div>
-          <div className="hero-socials">
-            <a href={profile.github}>
-              <Github size={15} aria-hidden="true" />
-              GitHub
-            </a>
-            <a href={profile.linkedin}>
-              <Linkedin size={15} aria-hidden="true" />
-              LinkedIn
-            </a>
-            <a href={`mailto:${profile.email}`}>
-              <Mail size={15} aria-hidden="true" />
-              Email
             </a>
           </div>
         </div>
@@ -204,8 +271,29 @@ function Hero() {
           </div>
         </aside>
       </div>
+      <ul className="shell hero-stats" aria-label="Highlights">
+        {profile.highlights.map((item) => (
+          <li key={item.label}>
+            <CountUp value={item.value} />
+            <span>{item.label}</span>
+          </li>
+        ))}
+      </ul>
       <div className="shell hero-footer">
-        <span>Enterprise software · Clinical research data · Legislative analysis</span>
+        <div className="hero-socials">
+          <a href={profile.github}>
+            <Github size={15} aria-hidden="true" />
+            GitHub
+          </a>
+          <a href={profile.linkedin}>
+            <Linkedin size={15} aria-hidden="true" />
+            LinkedIn
+          </a>
+          <a href={`mailto:${profile.email}`}>
+            <Mail size={15} aria-hidden="true" />
+            Email
+          </a>
+        </div>
         <a href="#projects">
           {projects.length} project case studies
           <ArrowDown size={15} aria-hidden="true" />
@@ -367,6 +455,14 @@ function Experience() {
         <div className="timeline">
           {experience.map((job) => (
             <article key={job.id} className="experience-item">
+              <img
+                className="experience-visual"
+                src={asset(job.image)}
+                alt={job.imageAlt}
+                width="1200"
+                height="340"
+                loading="lazy"
+              />
               <div className="experience-meta">
                 <p className="mono">{job.period}</p>
                 <span>{job.location}</span>
@@ -374,6 +470,11 @@ function Experience() {
               <h3>{job.role}</h3>
               <p className="company">{job.company}</p>
               <p className="experience-summary">{job.summary}</p>
+              <ul className="tags experience-tags" aria-label={`${job.company} tools`}>
+                {job.stack.map((tool) => (
+                  <li key={tool}>{tool}</li>
+                ))}
+              </ul>
               <ul>
                 {job.bullets.map((bullet) => (
                   <li key={bullet}>{bullet}</li>
@@ -870,6 +971,37 @@ export default function App() {
     window.addEventListener('hashchange', update);
     return () => window.removeEventListener('hashchange', update);
   }, []);
+  // Cards tilt slightly toward the pointer; skipped for reduced motion and touch input.
+  useEffect(() => {
+    if (prefersReducedMotion()) return;
+    const selector = '.featured-card, .project-card, .focus-card';
+    const move = (event) => {
+      const card = event.target.closest?.(selector);
+      if (!card || event.pointerType !== 'mouse') return;
+      const box = card.getBoundingClientRect();
+      card.style.setProperty(
+        '--tilt-x',
+        `${((event.clientY - box.top) / box.height - 0.5) * -5}deg`,
+      );
+      card.style.setProperty(
+        '--tilt-y',
+        `${((event.clientX - box.left) / box.width - 0.5) * 5}deg`,
+      );
+    };
+    const leave = (event) => {
+      const card = event.target.closest?.(selector);
+      if (card && !card.contains(event.relatedTarget)) {
+        card.style.removeProperty('--tilt-x');
+        card.style.removeProperty('--tilt-y');
+      }
+    };
+    document.addEventListener('pointermove', move);
+    document.addEventListener('pointerout', leave);
+    return () => {
+      document.removeEventListener('pointermove', move);
+      document.removeEventListener('pointerout', leave);
+    };
+  }, []);
   const closeProject = () => {
     const anchor = activeProject?.featured ? 'work' : 'projects';
     window.history.replaceState(
@@ -887,7 +1019,7 @@ export default function App() {
       <Header />
       <main id="main">
         <Hero />
-      <FocusAreas />
+        <FocusAreas />
         <FeaturedWork />
         <Experience />
         <ProjectLibrary />

@@ -77,6 +77,22 @@ test('owner-corrected experience is preserved and the removed project is absent'
   assert.equal(content.projects.length, 18);
 });
 
+test('experience tool chips and hero highlights are backed by existing content', () => {
+  for (const job of content.experience) {
+    assert.ok(existsSync(resolve('public', job.image)), `${job.id}: missing image`);
+    assert.ok(job.imageAlt?.trim(), `${job.id}: missing image alt`);
+  }
+  for (const job of content.experience)
+    for (const tool of job.stack)
+      assert.match(job.bullets.join(' '), new RegExp(tool.split(' ')[0]), `${job.id}: ${tool}`);
+  const values = Object.fromEntries(content.profile.highlights.map((h) => [h.label, h.value]));
+  assert.equal(
+    values['Project case studies with linked evidence'],
+    String(content.projects.length),
+  );
+  assert.match(content.education[0].note, new RegExp(values['GPA, M.S. in Data Science']));
+});
+
 test('LaTeX resume follows the requested section order and contains hyperlinks', () => {
   const source = readFileSync('resume/main.tex', 'utf8');
   assert.deepEqual(
