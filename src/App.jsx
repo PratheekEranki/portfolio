@@ -118,7 +118,6 @@ function Hero() {
             <span aria-hidden="true" />
             Open to software, AI & data roles
           </p>
-          <p className="eyebrow">PRATHEEK ERANKI / SOFTWARE ENGINEER</p>
           <h1>
             Building software.<em>Making data useful.</em>
           </h1>
@@ -131,25 +130,6 @@ function Hero() {
             <a className="button button-outline" href={asset('Pratheek-Eranki-Resume.pdf')}>
               <Download size={17} aria-hidden="true" />
               View résumé
-            </a>
-          </div>
-          <div className="hero-context">
-            <span>Enterprise engineering</span>
-            <span>Research data</span>
-            <span>Applied AI</span>
-          </div>
-          <div className="hero-socials">
-            <a href={profile.github}>
-              <Github size={15} aria-hidden="true" />
-              GitHub
-            </a>
-            <a href={profile.linkedin}>
-              <Linkedin size={15} aria-hidden="true" />
-              LinkedIn
-            </a>
-            <a href={`mailto:${profile.email}`}>
-              <Mail size={15} aria-hidden="true" />
-              Email
             </a>
           </div>
         </div>
@@ -204,8 +184,29 @@ function Hero() {
           </div>
         </aside>
       </div>
+      <ul className="shell hero-stats" aria-label="Highlights">
+        {profile.highlights.map((item) => (
+          <li key={item.label}>
+            <strong>{item.value}</strong>
+            <span>{item.label}</span>
+          </li>
+        ))}
+      </ul>
       <div className="shell hero-footer">
-        <span>Enterprise software · Clinical research data · Legislative analysis</span>
+        <div className="hero-socials">
+          <a href={profile.github}>
+            <Github size={15} aria-hidden="true" />
+            GitHub
+          </a>
+          <a href={profile.linkedin}>
+            <Linkedin size={15} aria-hidden="true" />
+            LinkedIn
+          </a>
+          <a href={`mailto:${profile.email}`}>
+            <Mail size={15} aria-hidden="true" />
+            Email
+          </a>
+        </div>
         <a href="#projects">
           {projects.length} project case studies
           <ArrowDown size={15} aria-hidden="true" />
@@ -374,6 +375,11 @@ function Experience() {
               <h3>{job.role}</h3>
               <p className="company">{job.company}</p>
               <p className="experience-summary">{job.summary}</p>
+              <ul className="tags experience-tags" aria-label={`${job.company} tools`}>
+                {job.stack.map((tool) => (
+                  <li key={tool}>{tool}</li>
+                ))}
+              </ul>
               <ul>
                 {job.bullets.map((bullet) => (
                   <li key={bullet}>{bullet}</li>
@@ -887,7 +893,7 @@ export default function App() {
       <Header />
       <main id="main">
         <Hero />
-      <FocusAreas />
+        <FocusAreas />
         <FeaturedWork />
         <Experience />
         <ProjectLibrary />

@@ -246,13 +246,8 @@ h2:focus {
   background: #18766a;
   box-shadow: 0 0 0 4px #18766a0c;
 }
-.hero .eyebrow {
-  font-size: 0.59rem;
-  letter-spacing: 0.12em;
-  color: #4c6089;
-}
 .hero h1 {
-  font-size: clamp(46px, calc(46px + 26 * ((100vw - 576px) / 1024)), 72px);
+  font-size: clamp(46px, calc(46px + 38 * ((100vw - 576px) / 1024)), 84px);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1;
@@ -308,23 +303,37 @@ h2:focus {
 .button-outline:hover {
   background: #edf3ff;
 }
-.hero-context {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0;
-  font-size: 0.65rem;
-  color: #596983;
-  margin-top: 25px;
+.hero-stats {
+  list-style: none;
+  margin-block: 0;
+  padding: 28px 0 32px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  border-top: 1px solid #dce4f2;
 }
-.hero-context span + span::before {
-  content: '/';
-  padding-inline: 10px;
-  color: #99a8bf;
+.hero-stats li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 16px;
+  border-left: 2px solid #234dc5;
+}
+.hero-stats strong {
+  font-family: var(--display);
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.hero-stats span {
+  font-size: 0.74rem;
+  line-height: 1.5;
+  color: #53617a;
 }
 .hero-socials {
   display: flex;
   gap: 23px;
-  margin-top: 26px;
   font-size: 0.72rem;
   color: #4c5b74;
 }
@@ -669,6 +678,12 @@ h2:focus {
 }
 .experience-item li + li {
   margin-top: 7px;
+}
+.experience-item .experience-tags {
+  margin: 14px 0 0;
+}
+.experience-item .experience-tags li {
+  margin-top: 0;
 }
 .project-section {
   background: white;
@@ -1337,7 +1352,7 @@ tbody th {
     gap: 35px;
   }
   .hero h1 {
-    font-size: 3.55rem;
+    font-size: 4rem;
   }
   .hero-intro {
     font-size: 0.9rem;
@@ -1406,10 +1421,7 @@ tbody th {
     gap: 30px;
   }
   .hero h1 {
-    font-size: 3rem;
-  }
-  .hero .eyebrow {
-    font-size: 0.52rem;
+    font-size: 3.3rem;
   }
   .hero-intro {
     font-size: 0.85rem;
@@ -1418,11 +1430,8 @@ tbody th {
     font-size: 0.65rem;
     margin-bottom: 27px;
   }
-  .hero-context {
-    font-size: 0.56rem;
-  }
-  .hero-context span + span::before {
-    padding-inline: 6px;
+  .hero-stats {
+    gap: 18px;
   }
   .hero-socials {
     font-size: 0.66rem;
@@ -1520,9 +1529,6 @@ tbody th {
   .hero h1 {
     font-size: clamp(2.75rem, 9.5vw, 4.3rem);
   }
-  .hero .eyebrow {
-    font-size: 0.6rem;
-  }
   .hero-intro {
     font-size: 0.93rem;
   }
@@ -1530,8 +1536,10 @@ tbody th {
     font-size: 0.65rem;
     margin-bottom: 25px;
   }
-  .hero-context {
-    font-size: 0.64rem;
+  .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 18px;
+    padding-block: 24px 26px;
   }
   .hero-showcase {
     transform: none;
@@ -1572,9 +1580,6 @@ tbody th {
     align-items: start;
     font-size: 0.59rem;
     padding-block: 18px;
-  }
-  .hero-footer > span {
-    max-width: 185px;
   }
   .hero-footer > a {
     max-width: 120px;
@@ -1774,9 +1779,6 @@ tbody th {
   .hero h1 {
     font-size: 2.7rem;
   }
-  .hero-context {
-    font-size: 0.57rem;
-  }
   .hero-socials {
     font-size: 0.7rem;
   }
@@ -1872,8 +1874,7 @@ h2 {
 .contact-section {
   background:
     radial-gradient(circle at 85% 0%, #5b7fff38, transparent 55%),
-    radial-gradient(circle at 0% 100%, #0e7c7b26, transparent 50%),
-    var(--dark);
+    radial-gradient(circle at 0% 100%, #0e7c7b26, transparent 50%), var(--dark);
 }
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -2031,8 +2032,8 @@ h2 {
   .hero h1,
   .hero-intro,
   .hero-actions,
-  .hero-context,
-  .hero-socials {
+  .hero-stats,
+  .hero-footer {
     animation: rise 0.9s cubic-bezier(0.4, 0, 0.2, 1) both;
   }
   .hero h1 {
@@ -2044,8 +2045,8 @@ h2 {
   .hero-actions {
     animation-delay: 0.35s;
   }
-  .hero-context,
-  .hero-socials {
+  .hero-stats,
+  .hero-footer {
     animation-delay: 0.45s;
   }
   .hero-showcase {

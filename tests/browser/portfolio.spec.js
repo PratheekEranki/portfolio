@@ -7,6 +7,7 @@ test('page, assets, resume, and metadata load without errors', async ({ page, re
   page.on('pageerror', (e) => errors.push(e.message));
   await page.goto('./');
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Building software.');
+  await expect(page.getByRole('list', { name: 'Highlights' }).getByRole('listitem')).toHaveCount(4);
   for (const asset of [
     'Pratheek-Eranki-Resume.pdf',
     'Pratheek-Eranki-Resume.tex',
