@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="title desc">
+<title id="title">Rhamba research workflow</title><desc id="desc">Explanatory schematic of region-aware masking and hybrid Attention-Mamba learning for fMRI.</desc>
+<defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#213b5d" stroke-width=".6"/></pattern><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1 1L7 4L1 7" fill="none" stroke="#91b7ed" stroke-width="1.5"/></marker></defs>
+<rect width="800" height="440" fill="#10233a"/><rect width="800" height="440" fill="url(#grid)"/>
+<text x="40" y="50" font-family="monospace" font-size="12" letter-spacing="2" fill="#b2c9e9">RHAMBA / REPRESENTATION LEARNING</text>
+<text x="40" y="95" font-family="Arial,sans-serif" font-size="27" fill="#edf4ff">A region-aware path through fMRI.</text>
+<g stroke="#496992" stroke-width="1.5"><rect x="40" y="156" width="145" height="135" rx="9" fill="#17334f"/><rect x="230" y="156" width="145" height="135" rx="9" fill="#234a75"/><rect x="420" y="156" width="145" height="135" rx="9" fill="#17334f"/><rect x="610" y="156" width="145" height="135" rx="9" fill="#17334f"/></g>
+<g stroke="#91b7ed" stroke-width="1.5" marker-end="url(#arrow)"><path d="M190 224H221"/><path d="M380 224H411"/><path d="M570 224H601"/></g>
+<g fill="#a8c8f5"><circle cx="82" cy="195" r="5"/><circle cx="102" cy="195" r="5"/><circle cx="122" cy="195" r="5"/><circle cx="142" cy="195" r="5"/><path d="M268 182h18v18h-18zM293 182h18v18h-18z"/><path d="M318 182h18v18h-18z" opacity=".25"/><path d="M463 185h62v4h-62zM471 194h46v4h-46z"/><path d="M660 202v-18h7v18zM673 202v-27h7v27zM686 202v-34h7v34z"/></g>
+<g fill="#eef4ff" font-family="Arial,sans-serif" font-size="16" text-anchor="middle"><text x="112" y="243">fMRI input</text><text x="302" y="239">Region-aware</text><text x="302" y="262">masking</text><text x="492" y="239">Attention +</text><text x="492" y="262">Mamba</text><text x="682" y="243">Evaluation</text></g>
+<path d="M40 335H755" stroke="#3b5476"/>
+<text x="40" y="373" font-family="monospace" font-size="12" fill="#bdd0e9">EXPLANATORY SCHEMATIC · NOT MEASURED BRAIN DATA</text>
+</svg>
