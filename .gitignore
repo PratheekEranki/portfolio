@@ -1,3 +1,11 @@
-node_modules
-dist
+node_modules/
+dist/
+test-results/
+playwright-report/
+.browser-cache/
+tmp/
+resume/*.aux
+resume/*.log
+resume/*.out
+resume/*.xdv
 .DS_Store

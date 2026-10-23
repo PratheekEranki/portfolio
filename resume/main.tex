@@ -1,0 +1,108 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[top=0.42in,bottom=0.45in,left=0.45in,right=0.45in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Pratheek Eranki Resume},pdfauthor={Pratheek Eranki}}
+\pagestyle{empty}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+\setlength{\emergencystretch}{2em}
+\linespread{0.98}
+\titleformat{\section}{\needspace{3\baselineskip}\fontsize{12}{14}\selectfont\bfseries}{}{0pt}{}[\vspace{-1pt}\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{4pt}
+\setlist[itemize]{leftmargin=11pt,itemsep=1pt,topsep=2pt,parsep=0pt,partopsep=0pt,label=\textbullet}
+\newcommand{\entry}[3]{\needspace{11\baselineskip}\noindent\textbf{#1}\hfill #3\\[-1pt]\textit{#2}\par}
+\begin{document}
+\fontsize{10.5}{12}\selectfont
+\begin{center}
+{\fontsize{29}{32}\selectfont Pratheek Eranki}\par
+\vspace{4pt}
+
+{\small{} St. Charles, MO \textbar{} \href{mailto:pratheek.eranki@gmail.com}{pratheek.eranki@gmail.com} \textbar{} \href{tel:+19019028689}{+1 901-902-8689} \textbar{} \href{https://www.linkedin.com/in/pratheekeranki64/}{LinkedIn} \textbar{} \href{https://github.com/PratheekEranki}{GitHub} \textbar{} \href{https://pratheekeranki.github.io/portfolio/}{Portfolio}}\par\end{center}\vspace{-9pt}
+\section*{Summary}
+Software engineer with experience in enterprise application delivery, sleep EEG and fMRI research data preparation, and legislative data analysis. Builds full-stack applications and AI/data projects using Python, Java, SQL, React, and machine learning tools. Co-author of the Rhamba research publication.
+\section*{Education}
+\textbf{University of Memphis}\hfill{\small{}Aug 2024 -- May 2026}\\
+M.S. in Data Science\hfill{\small{} GPA 3.87 / 4.0}\par\vspace{2pt}
+\section*{Skills}
+\textbf{Languages:} Python, SQL, Java, JavaScript, TypeScript, R, Scala\par
+\textbf{Deep learning \& architectures:} PyTorch, TensorFlow, Transformers / self-attention, Mamba / state space models, Self-supervised learning, Masked autoencoders, Model fine-tuning, CBraMod\par
+\textbf{LLMs \& retrieval:} Hugging Face Transformers, Sentence Transformers, RAG, FAISS, LangChain, NVIDIA NIM, LLM APIs (OpenAI, Anthropic, Gemini), Prompt engineering\par
+\textbf{Machine learning \& evaluation:} scikit-learn, XGBoost, LightGBM, Time-series forecasting, Cross-validation, SHAP, BLEU / ROUGE / F1 evaluation\par
+\textbf{Research \& ML compute:} Resting-state fMRI, EEG sleep staging, MNE-Python, CUDA, Multi-GPU training, HPC clusters\par
+\textbf{Data \& visualization:} pandas, NumPy, SciPy, ETL pipelines, Apache Spark, Tableau, Plotly, Matplotlib, Seaborn, Excel\par
+\textbf{Backend \& APIs:} Spring Boot, Spring Security, FastAPI, REST APIs, JWT authentication, WebSockets, Apache Kafka\par
+\textbf{Frontend \& applications:} React, HTML, CSS, Tailwind CSS, Streamlit, Gradio\par
+\textbf{Databases \& persistence:} PostgreSQL, MySQL, MongoDB, Redis, SQLAlchemy, Spring Data JPA, Relational database design, Query optimization\par
+\textbf{MLOps, delivery \& practices:} MLflow, Evidently, AWS, Docker, Docker Compose, Git, GitHub Actions / CI/CD, JUnit, pytest, Agile / Scrum, Technical documentation\par
+\section*{Experience}
+\entry{St. Jude Children's Research Hospital}{Software Engineer}{September 2025 -- May 2026}
+Contributed to software and data workflows supporting sleep EEG and fMRI research in a clinical research environment.
+\begin{itemize}
+\item Prepared and validated sleep EEG and fMRI data for downstream research analysis, resolving data-quality and formatting issues while maintaining traceable processing steps.
+\item Used PyTorch and TensorFlow in research workflows involving Transformers, self-attention, and Mamba architectures; supported model preparation, training, and fine-tuning experiments.
+\item Worked with CBraMod-based EEG sleep-staging workflows and self-supervised fMRI experiments, connecting data preparation with model inputs and downstream evaluation.
+\item Collaborated with researchers to translate study requirements into repeatable processing and analysis workflows, and developed utilities to reduce repetitive preparation work.
+\item Documented processing procedures, validation checks, experiment configurations, and technical decisions so research workflows could be reproduced, reviewed, and maintained.
+\end{itemize}\vspace{2pt}
+\entry{University of Memphis}{Graduate Student Research Assistant}{March 2025 -- August 2025}
+Conducted data-focused research using legislative records obtained through LegiScan.
+\begin{itemize}
+\item Built reproducible workflows to collect legislative records through the LegiScan API, clean source data, and organize structured SQL datasets for research analysis.
+\item Standardized bill identifiers, jurisdictions, legislative status, sponsors, and subject classifications to support consistent comparisons across legislative records.
+\item Used SQL and Excel to clean, deduplicate, and align legislative records with demographic data by state and year for comparative analysis.
+\item Performed exploratory analysis of legislative activity and prepared Tableau and Plotly views to communicate trends and structured findings for faculty review.
+\item Documented data definitions, transformation logic, API collection steps, and known limitations so research workflows and datasets could be reproduced and extended.
+\end{itemize}\vspace{2pt}
+\entry{Cognizant}{Software Engineer}{October 2021 -- April 2024}
+Contributed to enterprise software delivery in client-facing engineering environments.
+\begin{itemize}
+\item Developed and maintained Java Spring Boot application components and REST APIs within established development, testing, and release processes.
+\item Built and maintained React and TypeScript interface components for data display, form validation, and application workflows, integrating them with backend services.
+\item Worked with MySQL queries and indexing to support application data access and reporting; investigated software defects, documented root causes, and coordinated fixes with engineering and business stakeholders.
+\item Supported JUnit testing, Docker-based environments, AWS deployment workflows, CI/CD, release validation, and production issue resolution across iterative software deliveries.
+\item Participated in Agile delivery and code reviews, and created technical documentation and handoff materials explaining application behavior, recurring issues, and maintenance procedures.
+\end{itemize}\vspace{2pt}
+\section*{Projects}
+\needspace{5\baselineskip}\textbf{FieldVerify}\hfill{\small{} \href{https://github.com/PratheekEranki/fieldverify}{Code} \textbar\ \href{https://pratheekeranki.github.io/portfolio/\#project/fieldverify}{Case study}}\\
+{\small{}FastAPI / React / Android / Identity SDKs}\par
+\begin{itemize}
+\item Built the workflow around separate authenticity and matching signals, manual fallback, SDK integration, and a chained audit log.
+\item Uses a FastAPI backend with React and Android interfaces.
+\item Separates cryptographic credential checks from record-match scoring.
+\item Records outcomes in a SHA-256-chained audit trail and includes tests for matching, audit behavior, and verification paths.
+\end{itemize}\vspace{3pt}
+\needspace{5\baselineskip}\textbf{OpsFlow}\hfill{\small{} \href{https://github.com/PratheekEranki/opsflow-saas}{Code} \textbar\ \href{https://pratheekeranki.github.io/portfolio/\#project/opsflow}{Case study}}\\
+{\small{}Spring Boot / React / PostgreSQL / WebSockets}\par
+\begin{itemize}
+\item Implemented team and ticket workflows across Spring Boot services and the React interface, including role-aware access and real-time updates.
+\item Scopes organizations, users, projects, and tickets through authenticated APIs.
+\item Uses WebSockets for board updates and Kafka for activity events.
+\item Combines PostgreSQL persistence, Redis caching, and container-based development.
+\end{itemize}\vspace{3pt}
+\needspace{5\baselineskip}\textbf{FixBot}\hfill{\small{} \href{https://github.com/PratheekEranki/fixbot-device-agent}{Code} \textbar\ \href{https://pratheekeranki.github.io/portfolio/\#project/fixbot}{Case study}}\\
+{\small{}Python / NVIDIA NIM / FAISS / FastAPI / Gradio}\par
+\begin{itemize}
+\item Implemented a custom iterative tool-calling loop, structured lookup tools, session memory, FastAPI endpoints, and a Gradio interface showing tool activity.
+\item Dispatches three tools for symptoms, pricing, and FAISS-backed knowledge search.
+\item Feeds tool results back into an OpenAI-compatible NVIDIA NIM model until a response is ready.
+\item Keeps a sliding window of conversation history and exposes the API separately from the interface.
+\end{itemize}\vspace{3pt}
+\section*{Publications}
+Pankaj Pandey, Ruthwik Reddy Doodipala, Pratheek Eranki, Carolina Torres-Rojas, Manob Jyoti Saikia, Ranganatha Sitaram. \textit{Rhamba: Region-Aware Hybrid Attention-Mamba Framework for Self-Supervised Learning in Resting-State fMRI}. Accepted for publication in Computers in Biology and Medicine, as reported by the arXiv record. \href{https://arxiv.org/abs/2605.01240}{arXiv:2605.01240}.
+\section*{Certifications}
+\begin{itemize}
+\item AWS Certified Cloud Practitioner \textemdash{} Amazon Web Services \hfill {\small{}Nov 2023 \textperiodcentered{} Expires Nov 2026}
+\item Microsoft Certified: Azure Fundamentals \textemdash{} Microsoft \hfill {\small{}Apr 2023}
+\item AI Fluency: Framework \& Foundations \textemdash{} Anthropic \hfill {\small{}Jun 2026}
+\item Crash Course on Python \textemdash{} Coursera \hfill {\small{}Jun 2020}
+\end{itemize}
+{\small{} \href{https://www.linkedin.com/in/pratheekeranki64/details/certifications/}{Credentials on LinkedIn}}
+\end{document}

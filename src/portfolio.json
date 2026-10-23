@@ -1,0 +1,994 @@
+{
+  "profile": {
+    "name": "Pratheek Eranki",
+    "title": "Software Engineer · AI & Data",
+    "headline": "Building software. Making data useful.",
+    "intro": "I work across software engineering and research data workflows. My experience spans enterprise application delivery, sleep EEG and fMRI data preparation, and legislative data analysis. My projects explore full-stack applications, AI agents, and machine learning.",
+    "email": "pratheek.eranki@gmail.com",
+    "phone": "+1 901-902-8689",
+    "location": "St. Charles, MO",
+    "github": "https://github.com/PratheekEranki",
+    "linkedin": "https://www.linkedin.com/in/pratheekeranki64/",
+    "credentialsUrl": "https://www.linkedin.com/in/pratheekeranki64/details/certifications/",
+    "resumeSummary": "Software engineer with experience in enterprise application delivery, sleep EEG and fMRI research data preparation, and legislative data analysis. Builds full-stack applications and AI/data projects using Python, Java, SQL, React, and machine learning tools. Co-author of the Rhamba research publication."
+  },
+  "experience": [
+    {
+      "id": "st-jude",
+      "company": "St. Jude Children's Research Hospital",
+      "role": "Software Engineer",
+      "period": "September 2025 – May 2026",
+      "location": "Memphis, TN",
+      "summary": "Contributed to software and data workflows supporting sleep EEG and fMRI research in a clinical research environment.",
+      "bullets": [
+        "Prepared and validated sleep EEG and fMRI data for downstream research analysis, resolving data-quality and formatting issues while maintaining traceable processing steps.",
+        "Used PyTorch and TensorFlow in research workflows involving Transformers, self-attention, and Mamba architectures; supported model preparation, training, and fine-tuning experiments.",
+        "Worked with CBraMod-based EEG sleep-staging workflows and self-supervised fMRI experiments, connecting data preparation with model inputs and downstream evaluation.",
+        "Collaborated with researchers to translate study requirements into repeatable processing and analysis workflows, and developed utilities to reduce repetitive preparation work.",
+        "Documented processing procedures, validation checks, experiment configurations, and technical decisions so research workflows could be reproduced, reviewed, and maintained."
+      ]
+    },
+    {
+      "id": "memphis",
+      "company": "University of Memphis",
+      "role": "Graduate Student Research Assistant",
+      "period": "March 2025 – August 2025",
+      "location": "Memphis, TN",
+      "summary": "Conducted data-focused research using legislative records obtained through LegiScan.",
+      "bullets": [
+        "Built reproducible workflows to collect legislative records through the LegiScan API, clean source data, and organize structured SQL datasets for research analysis.",
+        "Standardized bill identifiers, jurisdictions, legislative status, sponsors, and subject classifications to support consistent comparisons across legislative records.",
+        "Used SQL and Excel to clean, deduplicate, and align legislative records with demographic data by state and year for comparative analysis.",
+        "Performed exploratory analysis of legislative activity and prepared Tableau and Plotly views to communicate trends and structured findings for faculty review.",
+        "Documented data definitions, transformation logic, API collection steps, and known limitations so research workflows and datasets could be reproduced and extended."
+      ]
+    },
+    {
+      "id": "cognizant",
+      "company": "Cognizant",
+      "role": "Software Engineer",
+      "period": "October 2021 – April 2024",
+      "location": "Hyderabad, India",
+      "summary": "Contributed to enterprise software delivery in client-facing engineering environments.",
+      "bullets": [
+        "Developed and maintained Java Spring Boot application components and REST APIs within established development, testing, and release processes.",
+        "Built and maintained React and TypeScript interface components for data display, form validation, and application workflows, integrating them with backend services.",
+        "Worked with MySQL queries and indexing to support application data access and reporting; investigated software defects, documented root causes, and coordinated fixes with engineering and business stakeholders.",
+        "Supported JUnit testing, Docker-based environments, AWS deployment workflows, CI/CD, release validation, and production issue resolution across iterative software deliveries.",
+        "Participated in Agile delivery and code reviews, and created technical documentation and handoff materials explaining application behavior, recurring issues, and maintenance procedures."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "title": "Languages",
+      "items": ["Python", "SQL", "Java", "JavaScript", "TypeScript", "R", "Scala"],
+      "projectIds": ["opsflow", "academic-rag"]
+    },
+    {
+      "title": "Deep learning & architectures",
+      "items": [
+        "PyTorch",
+        "TensorFlow",
+        "Transformers / self-attention",
+        "Mamba / state space models",
+        "Self-supervised learning",
+        "Masked autoencoders",
+        "Model fine-tuning",
+        "CBraMod"
+      ],
+      "projectIds": ["rhamba", "cbramod"]
+    },
+    {
+      "title": "LLMs & retrieval",
+      "items": [
+        "Hugging Face Transformers",
+        "Sentence Transformers",
+        "RAG",
+        "FAISS",
+        "LangChain",
+        "NVIDIA NIM",
+        "LLM APIs (OpenAI, Anthropic, Gemini)",
+        "Prompt engineering"
+      ],
+      "projectIds": ["fixbot", "academic-rag"]
+    },
+    {
+      "title": "Machine learning & evaluation",
+      "items": [
+        "scikit-learn",
+        "XGBoost",
+        "LightGBM",
+        "Time-series forecasting",
+        "Cross-validation",
+        "SHAP",
+        "BLEU / ROUGE / F1 evaluation"
+      ],
+      "projectIds": ["demandsense", "segmentwise"]
+    },
+    {
+      "title": "Research & ML compute",
+      "items": [
+        "Resting-state fMRI",
+        "EEG sleep staging",
+        "MNE-Python",
+        "CUDA",
+        "Multi-GPU training",
+        "HPC clusters"
+      ],
+      "projectIds": ["rhamba", "cbramod"]
+    },
+    {
+      "title": "Data & visualization",
+      "items": [
+        "pandas",
+        "NumPy",
+        "SciPy",
+        "ETL pipelines",
+        "Apache Spark",
+        "Tableau",
+        "Plotly",
+        "Matplotlib",
+        "Seaborn",
+        "Excel"
+      ],
+      "projectIds": ["bank-marketing", "driftboard"]
+    },
+    {
+      "title": "Backend & APIs",
+      "items": [
+        "Spring Boot",
+        "Spring Security",
+        "FastAPI",
+        "REST APIs",
+        "JWT authentication",
+        "WebSockets",
+        "Apache Kafka"
+      ],
+      "projectIds": ["opsflow", "charity-aid"]
+    },
+    {
+      "title": "Frontend & applications",
+      "items": ["React", "HTML", "CSS", "Tailwind CSS", "Streamlit", "Gradio"],
+      "projectIds": ["homesearch", "fixbot"]
+    },
+    {
+      "title": "Databases & persistence",
+      "items": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "SQLAlchemy",
+        "Spring Data JPA",
+        "Relational database design",
+        "Query optimization"
+      ],
+      "projectIds": ["ecommerce-database", "opsflow"]
+    },
+    {
+      "title": "MLOps, delivery & practices",
+      "items": [
+        "MLflow",
+        "Evidently",
+        "AWS",
+        "Docker",
+        "Docker Compose",
+        "Git",
+        "GitHub Actions / CI/CD",
+        "JUnit",
+        "pytest",
+        "Agile / Scrum",
+        "Technical documentation"
+      ],
+      "projectIds": ["demandsense", "driftboard"]
+    }
+  ],
+  "education": [
+    {
+      "school": "University of Memphis",
+      "degree": "M.S. in Data Science",
+      "period": "Aug 2024 – May 2026",
+      "note": "GPA 3.87 / 4.0"
+    },
+    {
+      "school": "Gayatri Vidya Parishad College of Engineering",
+      "degree": "B.E. in Electronics & Communication Engineering",
+      "period": "Jul 2017 – Aug 2021",
+      "note": "GPA 8.63 / 10.0",
+      "includeInResume": false,
+      "includeInPortfolio": false
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "Nov 2023 · Expires Nov 2026"
+    },
+    {
+      "title": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
+      "date": "Apr 2023"
+    },
+    {
+      "title": "AI Fluency: Framework & Foundations",
+      "issuer": "Anthropic",
+      "date": "Jun 2026"
+    },
+    {
+      "title": "Crash Course on Python",
+      "issuer": "Coursera",
+      "date": "Jun 2020"
+    }
+  ],
+  "projects": [
+    {
+      "id": "rhamba",
+      "title": "Rhamba",
+      "category": "Research",
+      "featured": false,
+      "eyebrow": "Biomedical AI research",
+      "signal": "Accepted research · Co-author",
+      "summary": "Region-aware self-supervised learning for resting-state fMRI, combining Attention and Mamba architectures.",
+      "role": "Collaborative research co-author.",
+      "tags": ["PyTorch", "Attention–Mamba", "fMRI", "Self-supervised learning"],
+      "image": "images/rhamba.svg",
+      "imageAlt": "Schematic of the Rhamba workflow: fMRI, region-aware masking, hybrid encoder, downstream evaluation. This is an explanatory diagram, not measured brain data.",
+      "flow": ["fMRI input", "Region-aware masking", "Hybrid encoder", "Evaluation"],
+      "links": [
+        {
+          "label": "Read paper",
+          "url": "https://arxiv.org/abs/2605.01240"
+        }
+      ],
+      "problem": "Learn useful representations from resting-state fMRI while studying how anatomical masking and sequence-model architecture affect downstream performance.",
+      "contribution": "Co-authored the Rhamba publication on region-aware self-supervised fMRI representation learning. The linked paper provides the study and full author list.",
+      "approach": [
+        "Compared region-aware masking strategies and hybrid Attention-Mamba configurations.",
+        "Evaluated pretrained representations on downstream classification tasks.",
+        "Examined model behavior and interpretability across configurations."
+      ],
+      "evaluation": {
+        "text": "The paper reports downstream evaluation on COBRE and ADHD-200 after ABIDE pretraining. Results depend on both dataset and configuration; the paper provides the full experimental comparison."
+      },
+      "limitations": [
+        "Research results do not establish clinical diagnostic performance.",
+        "Configuration-dependent findings should be read alongside the paper's experimental setup."
+      ],
+      "publication": {
+        "title": "Rhamba: Region-Aware Hybrid Attention-Mamba Framework for Self-Supervised Learning in Resting-State fMRI",
+        "authors": "Pankaj Pandey, Ruthwik Reddy Doodipala, Pratheek Eranki, Carolina Torres-Rojas, Manob Jyoti Saikia, Ranganatha Sitaram",
+        "status": "Accepted for publication in Computers in Biology and Medicine, as reported by the arXiv record.",
+        "version": "arXiv:2605.01240 · v3, September 18, 2026"
+      }
+    },
+    {
+      "id": "fixbot",
+      "title": "FixBot",
+      "category": "AI / ML",
+      "featured": true,
+      "eyebrow": "Agent systems",
+      "signal": "3 tools · Inspectable execution",
+      "summary": "A conversational troubleshooting agent that connects symptom lookup, repair pricing, and semantic document search.",
+      "role": "Application implementation across agent orchestration, API, tools, and interface.",
+      "tags": ["Python", "NVIDIA NIM", "FAISS", "FastAPI", "Gradio"],
+      "image": "images/fixbot.jpg",
+      "imageAlt": "FixBot application showing its chat interface, device selector, and example troubleshooting questions.",
+      "flow": ["Message", "Tool selection", "Structured lookup", "Answer"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/fixbot-device-agent"
+        }
+      ],
+      "problem": "Turn a device problem into a grounded response with supporting symptom information, repair-cost estimates, and a clear next step.",
+      "contribution": "Implemented a custom iterative tool-calling loop, structured lookup tools, session memory, FastAPI endpoints, and a Gradio interface showing tool activity.",
+      "approach": [
+        "Dispatches three tools for symptoms, pricing, and FAISS-backed knowledge search.",
+        "Feeds tool results back into an OpenAI-compatible NVIDIA NIM model until a response is ready.",
+        "Keeps a sliding window of conversation history and exposes the API separately from the interface."
+      ],
+      "evaluation": {
+        "text": "The repository includes unit tests for the lookup and pricing tools. The interface exposes calls and results for inspection; no measured end-to-end diagnosis accuracy is claimed here."
+      },
+      "limitations": [
+        "Repair costs and symptom matches come from curated example knowledge bases.",
+        "In-process conversation memory is intended for a project deployment; a shared persistent store would be needed for multiple workers.",
+        "A labeled end-to-end evaluation would be the next step before broader deployment."
+      ]
+    },
+    {
+      "id": "homesearch",
+      "title": "HomeSearch",
+      "category": "Software",
+      "featured": true,
+      "eyebrow": "Full-stack engineering",
+      "signal": "51,000 generated listings",
+      "summary": "A property search application with a Spring Boot API, PostgreSQL storage, and a React interface with map-based search.",
+      "role": "Full-stack application, ingestion, search API, and container configuration.",
+      "tags": ["Java", "Spring Boot", "PostgreSQL", "React", "Docker"],
+      "image": "images/homesearch.jpg",
+      "imageAlt": "HomeSearch screenshot with property filters, listing cards, and an interactive map.",
+      "flow": ["CSV ingestion", "PostgreSQL", "Search API", "Map interface"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/home-listings-search"
+        }
+      ],
+      "problem": "Make a sizeable property dataset searchable through filters, pagination, and an interactive geographic interface.",
+      "contribution": "Implemented the Spring Boot service and React interface, including ingestion, listing details, city autocomplete, and map viewport search.",
+      "approach": [
+        "Seeds generated listings into PostgreSQL and exposes paginated search endpoints.",
+        "Uses React, Leaflet, and Recharts for map exploration and listing details.",
+        "Packages the database, API, and frontend with Docker Compose; includes JUnit/MockMvc tests and a JMeter plan."
+      ],
+      "evaluation": {
+        "text": "The project seeds 51,000 generated listings. A JMeter load-test plan and backend tests are available in the repository; a reproducible latency comparison still needs hardware, workload, and percentile context."
+      },
+      "limitations": [
+        "The listing dataset is generated for demonstration.",
+        "A reproducible latency report needs the hardware, database state, workload, and percentile measurements."
+      ]
+    },
+    {
+      "id": "academic-rag",
+      "title": "Academic RAG QA",
+      "category": "AI / ML",
+      "featured": false,
+      "eyebrow": "Retrieval & evaluation",
+      "signal": "ROUGE-1: 0.3281 → 0.3543",
+      "summary": "Local academic question answering with FAISS retrieval, quantized Mistral inference, and four query routes.",
+      "role": "Course project implementation and baseline evaluation.",
+      "tags": ["FAISS", "Mistral-7B", "Gradio", "Python"],
+      "flow": ["Documents", "FAISS index", "Query router", "Mistral answer"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/Attention-Based-RAG-Academic-QA-System"
+        },
+        {
+          "label": "Saved results",
+          "url": "evidence/rag-results.json"
+        }
+      ],
+      "problem": "Compare document-grounded generation against the same local model answering without retrieved context.",
+      "contribution": "Built ingestion, retrieval, generation, query routing, upload/re-indexing, and evaluation workflows.",
+      "approach": [
+        "Ingests PDF, TXT, and Markdown into a FAISS index.",
+        "Routes queries to document retrieval, direct math, web search, or fallback generation.",
+        "Evaluates RAG and base Mistral on a ten-question textbook QA set."
+      ],
+      "evaluation": {
+        "text": "Saved aggregate results on 10 textbook questions. Higher is better for these overlap metrics; these results are a small development benchmark.",
+        "columns": ["Metric", "Base Mistral", "RAG"],
+        "rows": [
+          ["BLEU-1", "0.2215", "0.2366"],
+          ["ROUGE-1", "0.3281", "0.3543"],
+          ["ROUGE-L", "0.2219", "0.2535"],
+          ["Token F1", "0.3142", "0.3272"],
+          ["Exact match", "0.0000", "0.0000"]
+        ]
+      },
+      "limitations": [
+        "Ten questions do not establish general performance or robustness.",
+        "Overlap metrics do not measure factual grounding or citation quality on their own.",
+        "Inference requires appropriate local hardware; the four routing paths need a broader evaluation."
+      ]
+    },
+    {
+      "id": "driftboard",
+      "title": "DriftBoard",
+      "category": "Data",
+      "featured": false,
+      "eyebrow": "Experiment analytics",
+      "signal": "A/B testing + metric monitoring",
+      "summary": "A campaign analytics dashboard combining hypothesis tests, false-discovery correction, and KPI anomaly detection.",
+      "role": "Analytics pipeline, statistical testing, and dashboard implementation.",
+      "tags": ["Python", "SciPy", "Streamlit", "Plotly"],
+      "image": "images/driftboard.jpg",
+      "imageAlt": "DriftBoard experiment browser with an effect-size and significance plot.",
+      "flow": ["Campaign data", "Hypothesis tests", "FDR correction", "Dashboard"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/driftboard"
+        },
+        {
+          "label": "Open dashboard",
+          "url": "https://pratheekeranki-driftboard-srcdashboard-trgdyi.streamlit.app/"
+        }
+      ],
+      "problem": "Help explore experiment effects and identify unusual KPI changes without treating every nominally significant test as a reliable finding.",
+      "contribution": "Implemented statistical comparisons, Benjamini-Hochberg correction, KPI anomaly analysis, and the Streamlit reporting interface.",
+      "approach": [
+        "Loads example data or an optional AWS Athena source.",
+        "Combines experiment summaries and an effect-size/significance visualization.",
+        "Shows IQR and Z-score anomalies alongside KPI time series."
+      ],
+      "evaluation": {
+        "text": "The repository includes test modules for statistical testing and drift detection. The default demonstration uses synthetic data; no measured business uplift is claimed."
+      },
+      "limitations": [
+        "Statistical significance should be interpreted with effect size and experiment assumptions.",
+        "KPI anomaly flags identify unusual observations, not necessarily a causal problem.",
+        "The hosted demonstration may need to wake from inactivity."
+      ]
+    },
+    {
+      "id": "air-quality",
+      "title": "Air Quality Patterns",
+      "category": "Data",
+      "featured": false,
+      "eyebrow": "Classification & clustering",
+      "signal": "1.2M hourly observations",
+      "summary": "Pollution and weather analysis across 200+ cities, with AQI classification and clustering of pollution regimes.",
+      "role": "Collaborative course project with Sai Teja Koppolu.",
+      "tags": ["scikit-learn", "pandas", "K-Means", "Tableau"],
+      "flow": ["API collection", "Cleaning", "Models & clusters", "Analysis"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/Air-Qulaity-Predictions-and-Classification"
+        }
+      ],
+      "problem": "Explore how pollution measurements vary by city and time, and compare supervised AQI labeling with unsupervised structure.",
+      "contribution": "Contributed to the data collection, preprocessing, model comparison, and visualization workflow.",
+      "approach": [
+        "Combines pollutant and weather measurements from April–November 2025.",
+        "Compares tree-based classifiers and examines K-Means clusters with low-dimensional visualizations.",
+        "Summarizes geographical and temporal pollution patterns."
+      ],
+      "evaluation": {
+        "text": "The project report records 99.9% AQI-category accuracy for tree models. AQI categories are derived from pollutant measurements, so this result should be interpreted as category reconstruction, not future air-quality forecasting."
+      },
+      "limitations": [
+        "The reported accuracy needs a split-aware assessment and checks for target-derived inputs.",
+        "A forecasting claim would require future targets, chronological evaluation, and appropriate baselines.",
+        "City and season coverage limit generalization."
+      ]
+    },
+    {
+      "id": "bank-marketing",
+      "title": "Bank Marketing Models",
+      "category": "Data",
+      "featured": false,
+      "eyebrow": "Statistical model comparison",
+      "signal": "Neural network F1: 0.5869",
+      "summary": "An R-based comparison of classifiers on the UCI Bank Marketing data, with explicit class-imbalance trade-offs.",
+      "role": "Statistical analysis, classifier comparison, and reporting.",
+      "tags": ["R", "caret", "Random Forest", "SVM"],
+      "flow": ["UCI dataset", "Stratified split", "Classifiers", "Evaluation"],
+      "links": [
+        {
+          "label": "Saved results",
+          "url": "evidence/bank-results.csv"
+        }
+      ],
+      "problem": "Compare models for identifying term-deposit subscriptions while distinguishing ranking quality from positive-class recall.",
+      "contribution": "Prepared the data, compared tree, SVM, and neural classifiers, and produced the statistical report.",
+      "approach": [
+        "Uses an 80/20 stratified train/test split.",
+        "Compares accuracy, precision, recall, F1, and AUC.",
+        "Reports the neural model's F1 alongside the random forest's AUC rather than selecting on accuracy alone."
+      ],
+      "evaluation": {
+        "text": "Values from the saved model comparison. The analysis includes call duration, which is only known after the call.",
+        "columns": ["Model", "AUC", "F1", "Recall"],
+        "rows": [
+          ["Neural network", "0.9438", "0.5869", "0.5388"],
+          ["Random forest", "0.9453", "0.5453", "0.4634"],
+          ["Decision tree", "0.8457", "0.5775", "0.5442"]
+        ]
+      },
+      "limitations": [
+        "Call duration cannot be used for pre-call campaign targeting; that use case requires retraining without it.",
+        "Encoding is fitted before the split in the current analysis; a stricter evaluation should fit preprocessing on training data only.",
+        "Results are specific to this historical dataset and split."
+      ]
+    },
+    {
+      "id": "stock-forecasting",
+      "title": "Stock Forecasting Comparison",
+      "category": "AI / ML",
+      "featured": false,
+      "eyebrow": "Sequence model evaluation",
+      "signal": "GRU had the lowest saved RMSE",
+      "summary": "A comparison of GRU, LSTM, and Transformer models for next-day Walmart closing-price prediction.",
+      "role": "Sequence-model experiments and comparative evaluation.",
+      "tags": ["GRU", "LSTM", "Transformer", "Time series"],
+      "flow": ["Price history", "60-day windows", "Sequence models", "Comparison"],
+      "links": [
+        {
+          "label": "Saved results",
+          "url": "evidence/stock-results.csv"
+        }
+      ],
+      "problem": "Study the behavior of different sequence architectures on a historical next-day prediction task.",
+      "contribution": "Compared model predictions and training behavior using shared saved evaluation outputs.",
+      "approach": [
+        "Uses historical Walmart price data and a 60-day lookback.",
+        "Compares MAE, RMSE, and R² across three architectures.",
+        "Keeps the observed model ranking visible, including the Transformer's weaker result."
+      ],
+      "evaluation": {
+        "text": "Values reproduced from the saved comparison, in the scale used by that experiment. GRU performed best among these three models in this run.",
+        "columns": ["Model", "RMSE", "MAE", "R²"],
+        "rows": [
+          ["GRU", "0.3696", "0.2396", "0.9847"],
+          ["LSTM", "1.0897", "0.8459", "0.8671"],
+          ["Transformer", "4.1934", "3.7046", "−0.9677"]
+        ]
+      },
+      "limitations": [
+        "The saved table does not include a naive last-price baseline.",
+        "A stronger evaluation should document chronological splitting and walk-forward results.",
+        "A single stock and experiment do not establish general predictive performance."
+      ]
+    },
+    {
+      "id": "movie-models",
+      "title": "Movie Analytics & Rating Models",
+      "category": "Data",
+      "featured": false,
+      "eyebrow": "Exploratory modeling",
+      "signal": "TMDB data · Model comparison",
+      "summary": "Movie-rating analysis with feature engineering, statistical classifiers, and genre and release-period visualizations.",
+      "role": "Data preparation, feature engineering, and exploratory model comparison.",
+      "tags": ["R", "TMDB API", "caret", "ggplot2"],
+      "flow": ["TMDB data", "Feature preparation", "Classifiers", "Analysis"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/Movie_popularity_R"
+        },
+        {
+          "label": "Recommendation experiments",
+          "url": "https://github.com/PratheekEranki/MovieRecomendation_R"
+        }
+      ],
+      "problem": "Explore the relationship between movie metadata, rating categories, and release patterns.",
+      "contribution": "Prepared movie features, compared statistical classifiers, and produced exploratory visualizations.",
+      "approach": [
+        "Derives genre and release-period features from movie metadata.",
+        "Compares LDA, QDA, naive Bayes, and KNN classification approaches.",
+        "Uses cross-validation and confusion matrices to inspect model behavior.",
+        "A companion repository explores TMDB data collection, rating prediction, and genre trends; it is linked separately from the classifier comparison."
+      ],
+      "evaluation": {
+        "text": "The repository contains the analysis workflow, cross-validation comparisons, and plots for exploring rating categories and model behavior."
+      },
+      "limitations": [
+        "Current popularity and vote statistics can be unavailable at release time; any prospective prediction task needs a clearly defined observation date.",
+        "Classification and exploration are separate from a validated personalized recommendation system."
+      ]
+    },
+    {
+      "id": "charity-aid",
+      "title": "Charity-AID",
+      "category": "Software",
+      "featured": false,
+      "eyebrow": "Application engineering",
+      "signal": "Donation and aid workflows",
+      "summary": "A Spring Boot application for donor records, donation receipts, aid requests, and administrative workflows.",
+      "role": "Backend application and workflow implementation.",
+      "tags": ["Java", "Spring Security", "MySQL", "JUnit"],
+      "flow": ["Donor workflow", "Authenticated API", "Persistence", "Receipts"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/Charity-AID"
+        }
+      ],
+      "problem": "Connect donation and aid administration in an application with structured records and role-aware access.",
+      "contribution": "Implemented application workflows around donor management, receipts, authentication, and persistence.",
+      "approach": [
+        "Uses Spring Security and JWT-based access control.",
+        "Supports administrator TOTP, PDF receipt generation, and notification integration.",
+        "Persists records through Spring Data JPA and MySQL, with unit and integration tests."
+      ],
+      "evaluation": {
+        "text": "The repository documents the implementation and its unit and integration tests. Application workflows can be inspected through the code and test scenarios."
+      },
+      "limitations": [
+        "Email and deployment integrations require separate configuration.",
+        "Production readiness requires operational review beyond the scope of a portfolio demonstration."
+      ]
+    },
+    {
+      "id": "opsflow",
+      "title": "OpsFlow",
+      "category": "Software",
+      "featured": false,
+      "eyebrow": "Multi-tenant applications",
+      "signal": "Live Kanban + event workflows",
+      "summary": "A team workflow application with organization-scoped projects, live Kanban boards, and incident tracking.",
+      "role": "Backend services, application workflows, and frontend integration.",
+      "tags": ["Spring Boot", "React", "PostgreSQL", "WebSockets"],
+      "flow": ["Team action", "Scoped API", "Events & persistence", "Live board"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/opsflow-saas"
+        },
+        {
+          "label": "Live demo",
+          "url": "https://opsflow-saas-two.vercel.app"
+        }
+      ],
+      "problem": "Keep project work and incident updates in a shared application while separating organizations and supporting live collaboration.",
+      "contribution": "Implemented team and ticket workflows across Spring Boot services and the React interface, including role-aware access and real-time updates.",
+      "approach": [
+        "Scopes organizations, users, projects, and tickets through authenticated APIs.",
+        "Uses WebSockets for board updates and Kafka for activity events.",
+        "Combines PostgreSQL persistence, Redis caching, and container-based development."
+      ],
+      "evaluation": {
+        "text": "The repository provides the application, deployment configuration, and a test entry point. The hosted demonstration offers a way to inspect the workflow; no load or uptime result is asserted."
+      },
+      "limitations": [
+        "Organization isolation and authorization require ongoing security testing before real team data is used.",
+        "Free-hosted services can take time to start after inactivity."
+      ]
+    },
+    {
+      "id": "fieldverify",
+      "title": "FieldVerify",
+      "category": "Software",
+      "featured": true,
+      "eyebrow": "Identity workflow prototype",
+      "signal": "Credential checks + record matching",
+      "summary": "A provider site-visit prototype with mobile-ID integration, manual matching, and an auditable result history.",
+      "role": "Verification workflow, API integration, matching logic, and application interfaces.",
+      "tags": ["FastAPI", "React", "Android", "Identity SDKs"],
+      "flow": ["Visit record", "ID presentation", "Separate checks", "Audit record"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/fieldverify"
+        },
+        {
+          "label": "Live demo",
+          "url": "https://fieldverify-avyq.onrender.com"
+        }
+      ],
+      "problem": "Help a site-visit auditor distinguish a credential's authenticity from whether its attributes match an enrollment record.",
+      "contribution": "Built the workflow around separate authenticity and matching signals, manual fallback, SDK integration, and a chained audit log.",
+      "approach": [
+        "Uses a FastAPI backend with React and Android interfaces.",
+        "Separates cryptographic credential checks from record-match scoring.",
+        "Records outcomes in a SHA-256-chained audit trail and includes tests for matching, audit behavior, and verification paths."
+      ],
+      "evaluation": {
+        "text": "The demonstration uses synthetic provider data. The repository explicitly labels its verified mobile-ID screenshot as using a stubbed Credence response; that image is not evidence of live end-to-end verification."
+      },
+      "limitations": [
+        "A manual record match is not cryptographic verification.",
+        "Live SDK behavior depends on the configured identity profile and available claims.",
+        "The Android device token is a prototype mechanism; a production deployment needs stronger device authentication."
+      ],
+      "image": "images/fieldverify.png",
+      "imageAlt": "FieldVerify visit dashboard with synthetic provider records and visit statuses."
+    },
+    {
+      "id": "demandsense",
+      "title": "DemandSense",
+      "category": "AI / ML",
+      "featured": false,
+      "eyebrow": "Forecasting systems",
+      "signal": "Training → serving → monitoring",
+      "summary": "A retail-demand forecasting project connecting feature generation, model experiments, an API, and drift reporting.",
+      "role": "Forecasting pipeline, experiment tracking, serving, and monitoring integration.",
+      "tags": ["LightGBM", "XGBoost", "MLflow", "FastAPI"],
+      "flow": ["Sales history", "Lag features", "Forecast models", "API & monitoring"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/demandsense-forecasting"
+        }
+      ],
+      "problem": "Connect retail forecasting experiments to an inspectable prediction service and monitoring workflow.",
+      "contribution": "Implemented the project workflow from feature preparation and model comparison through serving and dashboard integration.",
+      "approach": [
+        "Builds lag, rolling, and calendar features from store-item sales histories.",
+        "Compares seasonal naive, gradient-boosted, and recurrent-model approaches with experiment tracking.",
+        "Exposes forecasts through FastAPI and a Streamlit dashboard, with drift reports and API/feature tests."
+      ],
+      "evaluation": {
+        "text": "The README describes expanding-window evaluation and WAPE comparisons. This case study links the full implementation without promoting README scores as independently reproduced results."
+      },
+      "limitations": [
+        "Time-series feature generation and splits must be checked together for leakage.",
+        "Model comparisons need a saved evaluation artifact, horizon, and baseline definition for reproducibility.",
+        "Historical store-item performance does not establish future inventory or revenue impact."
+      ]
+    },
+    {
+      "id": "customer-ops-agent",
+      "title": "Customer Operations Agent",
+      "category": "AI / ML",
+      "featured": false,
+      "eyebrow": "Tool use & escalation",
+      "signal": "6 support intents · Mock service tools",
+      "summary": "A support-agent prototype combining tool use, escalation rules, prompt comparisons, and an inspection dashboard.",
+      "role": "Implemented a project prototype with mock account tools, prompt iteration, routing rules, and monitoring views.",
+      "tags": ["LangChain", "NVIDIA NIM", "FastAPI", "Gradio"],
+      "flow": ["Support request", "Agent & tools", "Escalation rules", "Response & audit"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/hard-rock-digital-ai-agent"
+        }
+      ],
+      "problem": "Explore how an assistant can handle common account and transaction questions while handing sensitive cases to a human or risk queue.",
+      "contribution": "Implemented a project prototype with mock account tools, prompt iteration, routing rules, and monitoring views.",
+      "approach": [
+        "Routes among six customer-support intent categories.",
+        "Uses four mock tools for account, transaction, risk, and human handoff workflows.",
+        "Separates offline synthetic-data evaluation from live model execution."
+      ],
+      "evaluation": {
+        "text": "The repository contains 1,250 generated test cases and separate offline/live evaluation modes. Simulated interaction logs are not evidence of deployed customer outcomes."
+      },
+      "limitations": [
+        "This is a personal prototype themed around a customer-operations use case, not a claim of employment or deployment at Hard Rock Digital.",
+        "Mock tools do not access real customer accounts.",
+        "Offline and live-model results must be reported separately."
+      ]
+    },
+    {
+      "id": "segmentwise",
+      "title": "SegmentWise",
+      "category": "Data",
+      "featured": false,
+      "eyebrow": "Customer analytics",
+      "signal": "Segmentation + behavior models",
+      "summary": "A dashboard for exploring customer segments, churn models, campaign response, and model explanations.",
+      "role": "Built the segmentation, prediction, explanation, and dashboard workflow.",
+      "tags": ["K-Means", "XGBoost", "SHAP", "Streamlit"],
+      "flow": ["Customer data", "Segments", "Behavior models", "Dashboard"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/segmentwise"
+        },
+        {
+          "label": "Live demo",
+          "url": "https://segmentwise-hf6yoabvdwufrudyltf5nw.streamlit.app/"
+        }
+      ],
+      "problem": "Connect customer-group exploration with model behavior and accessible analytical reporting.",
+      "contribution": "Built the segmentation, prediction, explanation, and dashboard workflow.",
+      "approach": [
+        "Groups customer profiles using K-Means.",
+        "Models churn and campaign response with XGBoost.",
+        "Surfaces segment summaries, PCA views, and SHAP explanations in Streamlit."
+      ],
+      "evaluation": {
+        "text": "The repository includes the pipeline and model-inspection views. A targeting-lift claim requires a defined evaluation population, baseline, and saved experiment output."
+      },
+      "limitations": [
+        "Dashboard examples and offline model scores do not establish realized campaign uplift.",
+        "Segments depend on the input population and feature definitions."
+      ],
+      "image": "images/segmentwise.jpg",
+      "imageAlt": "SegmentWise dashboard showing segment-level churn and response comparisons."
+    },
+    {
+      "id": "fraud-detection",
+      "title": "Fraud Detection & Explanations",
+      "category": "AI / ML",
+      "featured": false,
+      "eyebrow": "Imbalanced classification",
+      "signal": "Synthetic-data benchmark + SHAP",
+      "summary": "A transaction-classification experiment using XGBoost, imbalance handling, and global and local model explanations.",
+      "role": "Implemented feature preparation, model training, saved evaluation summaries, and SHAP visualizations.",
+      "tags": ["XGBoost", "SHAP", "scikit-learn", "Python"],
+      "flow": ["Synthetic transactions", "Features", "Cross-validation", "SHAP analysis"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/FraudDetection"
+        },
+        {
+          "label": "Saved results",
+          "url": "evidence/fraud-results.json"
+        }
+      ],
+      "problem": "Study precision/recall trade-offs and model explanations when positive examples are rare.",
+      "contribution": "Implemented feature preparation, model training, saved evaluation summaries, and SHAP visualizations.",
+      "approach": [
+        "Generates 100,000 synthetic transactions with approximately 1% fraud labels.",
+        "Uses class weighting, log transforms, and cyclical time features.",
+        "Examines average precision and positive-class behavior alongside ROC-AUC."
+      ],
+      "evaluation": {
+        "text": "The saved synthetic-data summary reports average precision 0.9981 and fraud recall 0.9930. These scores describe the generated benchmark, not real financial transactions."
+      },
+      "limitations": [
+        "Synthetic labels may be much easier to predict than real fraud.",
+        "Deployment would need independent real-world validation and calibrated operating thresholds."
+      ]
+    },
+    {
+      "id": "ecommerce-database",
+      "title": "E-Commerce Database Design",
+      "category": "Software",
+      "featured": false,
+      "eyebrow": "Relational data modeling",
+      "signal": "Schema · Queries · Indexes",
+      "summary": "A MySQL database project for an e-commerce and multi-level distributor workflow, with generated data and analytical SQL.",
+      "role": "Contributed to a group database-systems project covering relational design, seed generation, and SQL analysis.",
+      "tags": ["MySQL", "SQL", "Python", "Data modeling"],
+      "flow": ["Schema", "Synthetic seed data", "Queries & views", "Plan analysis"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/Multi-Level-Marketing-Database-Design"
+        }
+      ],
+      "problem": "Model connected customer, order, product, and distributor records with consistent relationships and useful analytical queries.",
+      "contribution": "Contributed to a group database-systems project covering relational design, seed generation, and SQL analysis.",
+      "approach": [
+        "Defines entities and relationships for orders, products, distributors, and commissions.",
+        "Generates synthetic records for query development.",
+        "Includes views, indexes, and EXPLAIN-plan investigation."
+      ],
+      "evaluation": {
+        "text": "The repository exposes the schema and SQL artifacts. No undocumented query-speed improvement or production transaction volume is claimed."
+      },
+      "limitations": [
+        "This is an academic group project using generated data.",
+        "Performance conclusions require a recorded workload and reproducible query plans."
+      ]
+    },
+    {
+      "id": "cbramod",
+      "title": "CBraMod on ISRUC",
+      "category": "Research",
+      "featured": false,
+      "eyebrow": "EEG model adaptation",
+      "signal": "Pretraining & fine-tuning workflows",
+      "summary": "EEG representation-learning experiments adapting an existing CBraMod model to ISRUC sleep data.",
+      "role": "Adapted data preparation, pretraining and fine-tuning scripts, and patch visualizations around the existing CBraMod architecture.",
+      "tags": ["PyTorch", "EEG", "ISRUC", "Transformers"],
+      "flow": ["EEG preparation", "Patch representation", "Pretraining", "Fine-tuning"],
+      "links": [
+        {
+          "label": "View code",
+          "url": "https://github.com/PratheekEranki/CBraMod-ISRUC"
+        }
+      ],
+      "problem": "Explore the preparation and training workflow for a pretrained EEG architecture on sleep-staging data.",
+      "contribution": "Adapted data preparation, pretraining and fine-tuning scripts, and patch visualizations around the existing CBraMod architecture.",
+      "approach": [
+        "Prepares ISRUC EEG inputs for patch-based training.",
+        "Provides modified pretraining and downstream fine-tuning entry points.",
+        "Visualizes how EEG segments become model inputs."
+      ],
+      "evaluation": {
+        "text": "Training and evaluation entry points are available in the repository. A comparable held-out sleep-staging benchmark is not asserted without the split definition and saved results."
+      },
+      "limitations": [
+        "CBraMod is an existing architecture; this project is an adaptation and experiment workflow.",
+        "Subject-level separation and a documented evaluation protocol are necessary for interpretable results."
+      ]
+    }
+  ],
+  "resumeSkills": [
+    {
+      "title": "Languages",
+      "items": ["Python", "SQL", "Java", "JavaScript", "TypeScript", "R", "Scala"]
+    },
+    {
+      "title": "Deep learning & architectures",
+      "items": [
+        "PyTorch",
+        "TensorFlow",
+        "Transformers / self-attention",
+        "Mamba / state space models",
+        "Self-supervised learning",
+        "Masked autoencoders",
+        "Model fine-tuning",
+        "CBraMod"
+      ]
+    },
+    {
+      "title": "LLMs & retrieval",
+      "items": [
+        "Hugging Face Transformers",
+        "Sentence Transformers",
+        "RAG",
+        "FAISS",
+        "LangChain",
+        "NVIDIA NIM",
+        "LLM APIs (OpenAI, Anthropic, Gemini)",
+        "Prompt engineering"
+      ]
+    },
+    {
+      "title": "Machine learning & evaluation",
+      "items": [
+        "scikit-learn",
+        "XGBoost",
+        "LightGBM",
+        "Time-series forecasting",
+        "Cross-validation",
+        "SHAP",
+        "BLEU / ROUGE / F1 evaluation"
+      ]
+    },
+    {
+      "title": "Research & ML compute",
+      "items": [
+        "Resting-state fMRI",
+        "EEG sleep staging",
+        "MNE-Python",
+        "CUDA",
+        "Multi-GPU training",
+        "HPC clusters"
+      ]
+    },
+    {
+      "title": "Data & visualization",
+      "items": [
+        "pandas",
+        "NumPy",
+        "SciPy",
+        "ETL pipelines",
+        "Apache Spark",
+        "Tableau",
+        "Plotly",
+        "Matplotlib",
+        "Seaborn",
+        "Excel"
+      ]
+    },
+    {
+      "title": "Backend & APIs",
+      "items": [
+        "Spring Boot",
+        "Spring Security",
+        "FastAPI",
+        "REST APIs",
+        "JWT authentication",
+        "WebSockets",
+        "Apache Kafka"
+      ]
+    },
+    {
+      "title": "Frontend & applications",
+      "items": ["React", "HTML", "CSS", "Tailwind CSS", "Streamlit", "Gradio"]
+    },
+    {
+      "title": "Databases & persistence",
+      "items": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "SQLAlchemy",
+        "Spring Data JPA",
+        "Relational database design",
+        "Query optimization"
+      ]
+    },
+    {
+      "title": "MLOps, delivery & practices",
+      "items": [
+        "MLflow",
+        "Evidently",
+        "AWS",
+        "Docker",
+        "Docker Compose",
+        "Git",
+        "GitHub Actions / CI/CD",
+        "JUnit",
+        "pytest",
+        "Agile / Scrum",
+        "Technical documentation"
+      ]
+    }
+  ]
+}
