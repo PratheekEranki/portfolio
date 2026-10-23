@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-hidden="true">
+  <style>
+    .trace { animation: scroll 7s linear infinite; }
+    .t2 { animation-duration: 9s; } .t3 { animation-duration: 6s; } .t4 { animation-duration: 11s; }
+    .vox { animation: fade 3.6s ease-in-out infinite; }
+    .v2 { animation-delay: .9s; } .v3 { animation-delay: 1.8s; } .v4 { animation-delay: 2.7s; }
+    .scan { animation: sweep 5s ease-in-out infinite alternate; }
+    @keyframes scroll { to { transform: translateX(-240px); } }
+    @keyframes fade { 50% { opacity: .25; } }
+    @keyframes sweep { to { transform: translateY(150px); } }
+    @media (prefers-reduced-motion: reduce) { .trace, .vox, .scan { animation: none; } }
+  </style>
+  <defs>
+    <clipPath id="eeg"><rect x="40" y="40" width="640" height="260" rx="10"/></clipPath>
+    <clipPath id="brain"><ellipse cx="930" cy="170" rx="170" ry="128"/></clipPath>
+  </defs>
+  <rect width="1200" height="340" fill="#18191d"/>
+  <rect x="40" y="40" width="640" height="260" rx="10" fill="#1f2126" stroke="#2f3138"/>
+  <g font-family="monospace" font-size="13" fill="#6b6f78">
+    <text x="58" y="88">C3</text><text x="58" y="148">C4</text><text x="58" y="208">O1</text><text x="58" y="268">EOG</text>
+  </g>
+  <g clip-path="url(#eeg)" fill="none" stroke-linecap="round" stroke-width="2">
+    <path class="trace" stroke="#5cc8f0" d="M100 84 l10 -12 10 20 10 -26 10 30 10 -14 10 4 10 -10 10 16 10 -18 10 12 10 -6 10 10 10 -22 10 26 10 -12 10 2 10 -14 10 20 10 -8 10 4 10 -16 10 22 10 -10 10 6 10 -12 10 18 10 -20 10 12 10 -4 10 8 10 -14 10 16 10 -10 10 4 10 -12 10 20 10 -24 10 18 10 -6 10 10 10 -12 10 14 10 -18 10 12 10 -4 10 6 10 -10 10 16 10 -20 10 14 10 -8 10 10 10 -12 10 18 10 -16 10 8 10 -6 10 12 10 -18 10 14 10 -10 10 6 10 -12 10 20 10 -14 10 4 10 -8 10 12 10 -16 10 10 10 -6 10 8"/>
+    <path class="trace t2" stroke="#a487ff" d="M100 144 q15 -22 30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0"/>
+    <path class="trace t3" stroke="#5cc8f0" stroke-opacity=".7" d="M100 204 l8 -6 8 10 8 -14 8 8 8 -4 8 12 8 -16 8 10 8 -6 8 8 8 -10 8 14 8 -12 8 6 8 -4 8 10 8 -8 8 6 8 -12 8 16 8 -10 8 4 8 -6 8 10 8 -14 8 12 8 -8 8 6 8 -4 8 10 8 -12 8 8 8 -6 8 12 8 -10 8 6 8 -8 8 14 8 -12 8 6 8 -4 8 8 8 -10 8 12 8 -6 8 4 8 -10 8 14 8 -8 8 6 8 -12 8 10 8 -6 8 8 8 -4 8 10 8 -14 8 12 8 -6 8 4 8 -8 8 10 8 -12 8 8 8 -4 8 6 8 -10 8 12 8 -8 8 6 8 -4 8 10 8 -6 8 8 8 -10 8 6"/>
+    <path class="trace t4" stroke="#9ea1a8" stroke-opacity=".6" d="M100 264 c40 0 50 -30 90 -30 s50 30 90 30 s50 -30 90 -30 s50 30 90 30 s50 -30 90 -30 s50 30 90 30 s50 -30 90 -30 s50 30 90 30 s50 -30 90 -30 s50 30 90 30"/>
+  </g>
+  <ellipse cx="930" cy="170" rx="170" ry="128" fill="#1f2126" stroke="#2f3138" stroke-width="2"/>
+  <g clip-path="url(#brain)">
+    <g fill="#2a2c32">
+      <rect x="770" y="50" width="22" height="22"/><rect x="796" y="50" width="22" height="22"/><rect x="822" y="50" width="22" height="22"/><rect x="848" y="50" width="22" height="22"/><rect x="874" y="50" width="22" height="22"/><rect x="900" y="50" width="22" height="22"/><rect x="926" y="50" width="22" height="22"/><rect x="952" y="50" width="22" height="22"/><rect x="978" y="50" width="22" height="22"/><rect x="1004" y="50" width="22" height="22"/><rect x="1030" y="50" width="22" height="22"/><rect x="1056" y="50" width="22" height="22"/>
+    </g>
+    <g fill="#26282e">
+      <path d="M760 76h340v22H760zM760 102h340v22H760zM760 128h340v22H760zM760 154h340v22H760zM760 180h340v22H760zM760 206h340v22H760zM760 232h340v22H760zM760 258h340v22H760z"/>
+    </g>
+    <g stroke="#18191d" stroke-width="4">
+      <path d="M770 40v280M796 40v280M822 40v280M848 40v280M874 40v280M900 40v280M926 40v280M952 40v280M978 40v280M1004 40v280M1030 40v280M1056 40v280M1082 40v280"/>
+    </g>
+    <g fill="#a487ff">
+      <rect class="vox" x="848" y="102" width="22" height="22"/><rect class="vox v2" x="874" y="102" width="22" height="22"/><rect class="vox v3" x="1004" y="154" width="22" height="22"/><rect class="vox v4" x="978" y="180" width="22" height="22"/>
+    </g>
+    <g fill="#5cc8f0">
+      <rect class="vox v2" x="822" y="180" width="22" height="22"/><rect class="vox v4" x="926" y="76" width="22" height="22"/><rect class="vox v3" x="1030" y="102" width="22" height="22"/><rect class="vox" x="900" y="232" width="22" height="22"/>
+    </g>
+    <rect class="scan" x="740" y="60" width="380" height="3" fill="#5cc8f0" opacity=".55"/>
+  </g>
+  <g font-family="monospace" font-size="13" fill="#9ea1a8">
+    <text x="680" y="324" text-anchor="end">sleep EEG</text>
+    <text x="1100" y="324" text-anchor="end">fMRI</text>
+  </g>
+</svg>

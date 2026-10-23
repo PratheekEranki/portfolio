@@ -163,6 +163,27 @@ test('homepage and case study pass automated accessibility checks', async ({ pag
   ).toEqual([]);
 });
 
+test('dark theme is the default and the light theme toggles, persists, and stays accessible', async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto('./');
+  const background = () =>
+    page.evaluate(() => getComputedStyle(document.documentElement).backgroundColor);
+  expect(await background()).toBe('rgb(17, 18, 20)');
+  await page.getByRole('button', { name: 'Switch to light theme' }).click();
+  expect(await background()).toBe('rgb(243, 243, 240)');
+  await page.reload();
+  await expect(page.getByRole('button', { name: 'Switch to dark theme' })).toBeVisible();
+  expect(await page.locator('html').getAttribute('data-theme')).toBe('light');
+  await page.screenshot({ path: 'test-results/preview-1440-light.png' });
+  expect(
+    (await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze())
+      .violations,
+  ).toEqual([]);
+});
+
 test('mobile dialog stays within the viewport and its controls remain accessible', async ({
   page,
 }) => {

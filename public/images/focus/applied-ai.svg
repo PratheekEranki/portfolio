@@ -1,12 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-hidden="true">
+  <style>
+    .pulse { stroke-dasharray: 6 18; animation: flow 3s linear infinite; }
+    .node { animation: glow 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .n2 { animation-delay: .8s; } .n3 { animation-delay: 1.6s; }
+    @keyframes flow { to { stroke-dashoffset: -48; } }
+    @keyframes glow { 50% { opacity: .55; transform: scale(.9); } }
+    @media (prefers-reduced-motion: reduce) { .pulse, .node { animation: none; } }
+  </style>
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#1f3a66" stroke-opacity="0.08"/>
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
     </pattern>
   </defs>
-  <rect width="800" height="500" fill="#eef3fb"/>
+  <rect width="800" height="500" fill="#18191d"/>
   <rect width="800" height="500" fill="url(#grid)"/>
-  <g stroke="#234dc5" stroke-width="2" stroke-opacity="0.45" fill="none">
+  <g stroke="#3a3d45" stroke-width="2" fill="none">
     <path d="M170 250 L340 150 L520 220"/>
     <path d="M170 250 L340 350 L520 280"/>
     <path d="M340 150 L340 350"/>
@@ -15,17 +23,21 @@
     <path d="M340 150 L520 280"/>
     <path d="M340 350 L520 220"/>
   </g>
-  <circle cx="170" cy="250" r="26" fill="#234dc5"/>
-  <circle cx="340" cy="150" r="20" fill="#0e7c7b"/>
-  <circle cx="340" cy="350" r="20" fill="#0e7c7b"/>
-  <circle cx="520" cy="220" r="24" fill="#234dc5"/>
-  <circle cx="520" cy="280" r="24" fill="#234dc5"/>
-  <circle cx="640" cy="150" r="16" fill="#15233b"/>
-  <circle cx="640" cy="360" r="16" fill="#15233b"/>
-  <rect x="60" y="60" width="200" height="50" rx="6" fill="#ffffff" stroke="#c9d6ee"/>
-  <rect x="76" y="76" width="130" height="8" rx="4" fill="#234dc5" opacity="0.6"/>
-  <rect x="76" y="92" width="90" height="6" rx="3" fill="#8aa0c8"/>
-  <rect x="540" y="400" width="200" height="50" rx="6" fill="#ffffff" stroke="#c9d6ee"/>
-  <rect x="556" y="416" width="120" height="8" rx="4" fill="#0e7c7b" opacity="0.6"/>
-  <rect x="556" y="432" width="80" height="6" rx="3" fill="#8aa0c8"/>
+  <g stroke="#5cc8f0" stroke-width="2.5" fill="none" class="pulse">
+    <path d="M170 250 L340 150 L520 220 L640 150"/>
+    <path d="M170 250 L340 350 L520 280 L640 360"/>
+  </g>
+  <circle class="node" cx="170" cy="250" r="26" fill="#5cc8f0"/>
+  <circle class="node n2" cx="340" cy="150" r="20" fill="#a487ff"/>
+  <circle class="node n3" cx="340" cy="350" r="20" fill="#a487ff"/>
+  <circle class="node n2" cx="520" cy="220" r="24" fill="#5cc8f0"/>
+  <circle class="node n3" cx="520" cy="280" r="24" fill="#5cc8f0"/>
+  <circle cx="640" cy="150" r="16" fill="#e9e9ec"/>
+  <circle cx="640" cy="360" r="16" fill="#e9e9ec"/>
+  <rect x="60" y="60" width="200" height="50" rx="6" fill="#222429" stroke="#3a3d45"/>
+  <rect x="76" y="76" width="130" height="8" rx="4" fill="#5cc8f0" opacity="0.7"/>
+  <rect x="76" y="92" width="90" height="6" rx="3" fill="#6b6f78"/>
+  <rect x="540" y="400" width="200" height="50" rx="6" fill="#222429" stroke="#3a3d45"/>
+  <rect x="556" y="416" width="120" height="8" rx="4" fill="#a487ff" opacity="0.7"/>
+  <rect x="556" y="432" width="80" height="6" rx="3" fill="#6b6f78"/>
 </svg>

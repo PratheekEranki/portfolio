@@ -78,6 +78,10 @@ test('owner-corrected experience is preserved and the removed project is absent'
 });
 
 test('experience tool chips and hero highlights are backed by existing content', () => {
+  for (const job of content.experience) {
+    assert.ok(existsSync(resolve('public', job.image)), `${job.id}: missing image`);
+    assert.ok(job.imageAlt?.trim(), `${job.id}: missing image alt`);
+  }
   for (const job of content.experience)
     for (const tool of job.stack)
       assert.match(job.bullets.join(' '), new RegExp(tool.split(' ')[0]), `${job.id}: ${tool}`);

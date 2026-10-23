@@ -1,17 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-hidden="true">
-  <rect width="800" height="500" fill="#edf7f5"/>
-  <g stroke="#0e7c7b" stroke-opacity="0.12">
+  <style>
+    .wave { animation: drift 6s linear infinite; }
+    .w2 { animation-duration: 8s; } .w3 { animation-duration: 10s; }
+    .bar { animation: rise 2.4s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+    .b2 { animation-delay: .4s; } .b3 { animation-delay: .8s; } .b4 { animation-delay: 1.2s; }
+    @keyframes drift { to { transform: translateX(-260px); } }
+    @keyframes rise { to { transform: scaleY(.55); } }
+    @media (prefers-reduced-motion: reduce) { .wave, .bar { animation: none; } }
+  </style>
+  <rect width="800" height="500" fill="#18191d"/>
+  <g stroke="#ffffff" stroke-opacity="0.05">
     <path d="M0 100H800M0 200H800M0 300H800M0 400H800"/>
   </g>
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M40 150 C 90 90, 120 210, 170 150 S 250 90, 300 150 S 380 220, 430 150 S 510 80, 560 150 S 660 210, 760 140" stroke="#0e7c7b" stroke-width="3"/>
-    <path d="M40 260 C 90 200, 120 320, 170 260 S 250 200, 300 260 S 380 330, 430 260 S 510 190, 560 260 S 660 320, 760 250" stroke="#234dc5" stroke-width="2.5" stroke-opacity="0.7"/>
-    <path d="M40 370 C 90 330, 120 410, 170 370 S 250 330, 300 370 S 380 420, 430 370 S 510 320, 560 370 S 660 410, 760 360" stroke="#15233b" stroke-width="2" stroke-opacity="0.45"/>
+    <path class="wave" d="M40 150 C 90 90, 120 210, 170 150 S 250 90, 300 150 S 380 220, 430 150 S 510 80, 560 150 S 640 210, 690 150 S 770 90, 820 150 S 900 220, 950 150 S 1030 80, 1080 150" stroke="#a487ff" stroke-width="3"/>
+    <path class="wave w2" d="M40 260 C 90 200, 120 320, 170 260 S 250 200, 300 260 S 380 330, 430 260 S 510 190, 560 260 S 640 320, 690 260 S 770 200, 820 260 S 900 330, 950 260 S 1030 190, 1080 260" stroke="#5cc8f0" stroke-width="2.5" stroke-opacity="0.85"/>
+    <path class="wave w3" d="M40 370 C 90 330, 120 410, 170 370 S 250 330, 300 370 S 380 420, 430 370 S 510 320, 560 370 S 640 410, 690 370 S 770 330, 820 370 S 900 420, 950 370 S 1030 320, 1080 370" stroke="#9ea1a8" stroke-width="2" stroke-opacity="0.5"/>
   </g>
-  <g fill="#0e7c7b" opacity="0.85">
-    <rect x="60" y="430" width="22" height="30" rx="3"/>
-    <rect x="100" y="410" width="22" height="50" rx="3"/>
-    <rect x="140" y="440" width="22" height="20" rx="3"/>
-    <rect x="180" y="420" width="22" height="40" rx="3"/>
+  <g fill="#a487ff" opacity="0.85">
+    <rect class="bar" x="60" y="430" width="22" height="30" rx="3"/>
+    <rect class="bar b2" x="100" y="410" width="22" height="50" rx="3"/>
+    <rect class="bar b3" x="140" y="440" width="22" height="20" rx="3"/>
+    <rect class="bar b4" x="180" y="420" width="22" height="40" rx="3"/>
   </g>
 </svg>
