@@ -46,7 +46,7 @@
         "Power BI"
       ],
       "bullets": [
-        "Developing and deploying machine learning models and Python-based data pipelines in a healthcare technology environment to support clinical analytics and reporting.",
+        "Developing and deploying machine learning models and Python-based data pipelines in a healthcare technology environment to support clinical analytics and reporting, supporting Machine Learning model workflows.",
         "Working with SQL databases and structured clinical and operational datasets to deliver analytics, decision-support, and Power BI reporting workflows.",
         "Collaborating across teams to translate business requirements into data-driven solutions using Azure cloud services and ML tooling."
       ],
@@ -71,9 +71,9 @@
       "image": "images/experience/st-jude.svg",
       "imageAlt": "Illustration of multichannel fMRI voxel grids and EEG traces feeding into a model training workflow.",
       "bullets": [
-        "Contributed to self-supervised representation learning experiments on resting-state fMRI data, including region-aware masking strategies and hybrid encoder configurations evaluated on downstream classification tasks.",
+        "Contributed to self-supervised representation learning experiments on resting-state fMRI data, including region-aware masking strategies and hybrid encoder configurations evaluated on downstream classification tasks, deployed on Azure cloud infrastructure.",
         "Prepared and validated clinical fMRI and EEG datasets under IRB-governed data access protocols, resolving data-quality and formatting issues while maintaining reproducible, traceable processing steps.",
-        "Implemented model training and fine-tuning experiments in PyTorch and TensorFlow, working with Transformer, self-attention, and Mamba architectures for representation learning tasks.",
+        "Implemented model training and fine-tuning experiments in PyTorch and TensorFlow, working with Transformer, self-attention, and Mamba architectures for representation learning tasks, utilizing Transformers and Mamba-based architectures.",
         "Applied statistical evaluation methods including cross-validation, hypothesis testing, and benchmarking to assess model performance and guide experimental improvements.",
         "Developed Python-based data processing utilities to automate repetitive preparation steps and ensure consistent inputs across research experiments.",
         "Documented experiment configurations, processing procedures, validation checks, and technical decisions to support reproducibility and research review."
@@ -98,7 +98,7 @@
       "image": "images/experience/memphis.svg",
       "imageAlt": "Illustration of EEG traces flowing into a patch-based model alongside legislative documents flowing into dashboards.",
       "bullets": [
-        "Adapted CBraMod, a pretrained EEG representation model, to ISRUC sleep-staging data by modifying data preparation, pretraining, and fine-tuning workflows; built patch visualizations to validate segment representations.",
+        "Adapted CBraMod, a pretrained EEG representation model, to ISRUC sleep-staging data by modifying data preparation, pretraining, and fine-tuning workflows; built patch visualizations to validate segment representations, implemented in PyTorch.",
         "Developed a legislative data analysis application using the LegiScan API to retrieve, clean, and store bill records across 14+ US states, merging sponsor data with ACS district-level demographic data (2009\u20132023).",
         "Designed and built interactive analysis dashboards using Plotly and Tableau to communicate legislative activity trends, state-level comparisons, and sponsor-level demographic patterns for faculty review.",
         "Built reproducible data workflows using Python, SQL, and Excel to standardize bill identifiers, jurisdictions, legislative status, and subject classifications for consistent cross-state analysis.",
@@ -120,7 +120,7 @@
         "Azure"
       ],
       "bullets": [
-        "Built and maintained machine learning models and Python-based data pipelines to support client analytics and reporting requirements in a consulting environment.",
+        "Built and maintained machine learning models and Python-based data pipelines to support client analytics and reporting requirements in a consulting environment, leveraging Machine Learning models for client insights.",
         "Worked with SQL databases and structured datasets to perform data cleaning, feature engineering, and model evaluation across data science delivery projects.",
         "Communicated findings through Power BI dashboards and reports, collaborating with stakeholders to translate business problems into analytical solutions using Azure services."
       ],
