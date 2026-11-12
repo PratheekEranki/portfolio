@@ -37,7 +37,7 @@
       "role": "Data Scientist",
       "period": "June 2026 \u2013 Present",
       "location": "Remote, United States",
-      "summary": "Applying data science and ML to healthcare technology solutions.",
+      "summary": "Applying data science and machine learning to healthcare analytics and decision-support workflows.",
       "stack": [
         "Python",
         "SQL",
@@ -46,9 +46,11 @@
         "Power BI"
       ],
       "bullets": [
-        "Developing and deploying machine learning models and Python-based data pipelines in a healthcare technology environment to support clinical analytics and reporting, supporting Machine Learning model workflows.",
-        "Working with SQL databases and structured clinical and operational datasets to deliver analytics, decision-support, and Power BI reporting workflows.",
-        "Collaborating across teams to translate business requirements into data-driven solutions using Azure cloud services and ML tooling."
+        "Analyze healthcare and clinical datasets with Python, SQL, Pandas, and NumPy, examining utilization patterns, cohort-level trends, data distributions, and anomalies to prepare findings for healthcare analytics and decision support.",
+        "Apply classification and clustering approaches with Scikit-learn and PyTorch, taking analytical workflows through feature preparation, model training, and performance assessment; Machine Learning model outputs are evaluated against business-defined benchmarks.",
+        "Engineer Python- and SQL-based clinical data workflows spanning ingestion from multiple sources, record integration, data cleaning, and transformation into analysis-ready datasets.",
+        "Enforce data-quality controls: missing-value analysis, duplicate detection, schema validation, and dataset profiling to assess completeness, consistency, and reliability before downstream analytics and modeling.",
+        "Collaborate with data engineers, analysts, and healthcare stakeholders to clarify requirements, translate questions into reproducible analyses, and communicate findings through Azure-integrated workflows and Power BI dashboards."
       ],
       "image": "images/experience/citiustech.svg",
       "imageAlt": "Illustration of healthcare data flowing into a machine learning pipeline with analytics output."
@@ -56,7 +58,7 @@
     {
       "id": "st-jude",
       "company": "St. Jude Children's Research Hospital",
-      "role": "AI Research & Development Intern",
+      "role": "Software Engineer Intern \u2013 Machine Learning & Healthcare Data Science",
       "period": "September 2025 \u2013 May 2026",
       "location": "Memphis, TN",
       "summary": "Contributed to ML model development and clinical data workflows supporting sleep EEG and fMRI research.",
@@ -71,18 +73,17 @@
       "image": "images/experience/st-jude.svg",
       "imageAlt": "Illustration of multichannel fMRI voxel grids and EEG traces feeding into a model training workflow.",
       "bullets": [
-        "Contributed to self-supervised representation learning experiments on resting-state fMRI data, including region-aware masking strategies and hybrid encoder configurations evaluated on downstream classification tasks, deployed on Azure cloud infrastructure.",
-        "Prepared and validated clinical fMRI and EEG datasets under IRB-governed data access protocols, resolving data-quality and formatting issues while maintaining reproducible, traceable processing steps.",
-        "Implemented model training and fine-tuning experiments in PyTorch and TensorFlow, working with Transformer, self-attention, and Mamba architectures for representation learning tasks, utilizing Transformers and Mamba-based architectures.",
-        "Applied statistical evaluation methods including cross-validation, hypothesis testing, and benchmarking to assess model performance and guide experimental improvements.",
-        "Developed Python-based data processing utilities to automate repetitive preparation steps and ensure consistent inputs across research experiments.",
-        "Documented experiment configurations, processing procedures, validation checks, and technical decisions to support reproducibility and research review."
+        "Trained models across supervised prediction and self-supervised representation learning paradigms using Python, PyTorch and TensorFlow, and Scikit-learn to support clinical research questions and evaluate results against research-defined benchmarks.",
+        "Designed Python ETL workflows covering ingestion, cleaning, transformation, and validation; applied schema and completeness checks to clinical research pipeline runs containing 50K+ records.",
+        "Orchestrated research data workflows across Azure Data Factory, Azure Data Lake Storage, and Azure SQL to organize structured clinical datasets and provide consistent, query-ready outputs for research analytics.",
+        "Integrated Azure OpenAI Service into research-support activities for data organization and literature-informed dataset preparation; model experimentation used Transformers and Mamba-based architectures.",
+        "Connected research systems through Python data-processing components and REST integrations, supporting reliable data transfers between source systems and downstream research workflows."
       ]
     },
     {
       "id": "memphis",
       "company": "University of Memphis",
-      "role": "Graduate Student Research Assistant",
+      "role": "Graduate Student Research Assistant \u2013 Biomedical Data Science & AI Research",
       "period": "March 2025 \u2013 August 2025",
       "location": "Memphis, TN",
       "summary": "Conducted data-focused research using legislative records obtained through LegiScan.",
@@ -98,11 +99,11 @@
       "image": "images/experience/memphis.svg",
       "imageAlt": "Illustration of EEG traces flowing into a patch-based model alongside legislative documents flowing into dashboards.",
       "bullets": [
-        "Adapted CBraMod, a pretrained EEG representation model, to ISRUC sleep-staging data by modifying data preparation, pretraining, and fine-tuning workflows; built patch visualizations to validate segment representations, implemented in PyTorch.",
-        "Developed a legislative data analysis application using the LegiScan API to retrieve, clean, and store bill records across 14+ US states, merging sponsor data with ACS district-level demographic data (2009\u20132023).",
-        "Designed and built interactive analysis dashboards using Plotly and Tableau to communicate legislative activity trends, state-level comparisons, and sponsor-level demographic patterns for faculty review.",
-        "Built reproducible data workflows using Python, SQL, and Excel to standardize bill identifiers, jurisdictions, legislative status, and subject classifications for consistent cross-state analysis.",
-        "Documented data definitions, transformation logic, model adaptation steps, and known limitations so research workflows and datasets could be reproduced and extended."
+        "Co-authored research on self-supervised representation learning for resting-state fMRI, contributing to experiment design, preprocessing methods, and model evaluation across neuroimaging datasets ABIDE, COBRE, and ADHD-200.",
+        "Benchmarked a hybrid Attention-Mamba architecture against traditional machine learning and deep learning baselines; implemented model types including Random Forest, Gradient Boosting, K-Means, GRU, LSTM, and Transformer across academic projects totaling 1.2M+ records. CBraMod was adapted for EEG sleep-staging workflows; PyTorch was the primary deep learning framework.",
+        "Engineered Python preprocessing workflows for high-dimensional fMRI data: region-aware segmentation, normalization, and signal transformation to prepare neuroimaging inputs for model experimentation.",
+        "Built reproducible workflows to collect legislative records through the LegiScan API, clean source data, and organize structured SQL datasets for research analysis; used Plotly and Tableau views to communicate legislative trends for faculty review.",
+        "Documented experimental logs, evaluation results, data definitions, and transformation logic so research workflows could be reproduced and extended."
       ]
     },
     {
@@ -120,9 +121,11 @@
         "Azure"
       ],
       "bullets": [
-        "Built and maintained machine learning models and Python-based data pipelines to support client analytics and reporting requirements in a consulting environment, leveraging Machine Learning models for client insights.",
-        "Worked with SQL databases and structured datasets to perform data cleaning, feature engineering, and model evaluation across data science delivery projects.",
-        "Communicated findings through Power BI dashboards and reports, collaborating with stakeholders to translate business problems into analytical solutions using Azure services."
+        "Applied Python, Pandas, NumPy, SciPy, Matplotlib, and Seaborn to explore structured datasets, summarize distributions, identify anomalies, and examine relationships among business variables for predictive analytics.",
+        "Prepared modeling datasets through preprocessing: missing-value treatment, outlier analysis, categorical encoding, scaling, feature selection, and transformation using Pandas and Scikit-learn; Machine Learning models evaluated included Logistic Regression, Decision Trees, Random Forest, Gradient Boosting, XGBoost, and LightGBM.",
+        "Tuned and assessed models using train-test splits, K-fold cross-validation, GridSearchCV, and RandomizedSearchCV; reviewed evaluation metrics including accuracy, precision, recall, F1, ROC-AUC, MAE, RMSE, and R-squared.",
+        "Queried PostgreSQL and Oracle databases using joins, subqueries, CTEs, window functions, and aggregations to retrieve and prepare data for analysis.",
+        "Produced Power BI and Tableau reports and dashboards to present trends, KPIs, and analytical findings to business stakeholders, supported by Azure data infrastructure."
       ],
       "image": "images/experience/hexaware.svg",
       "imageAlt": "Illustration of data flowing through a consulting analytics pipeline with dashboard output."
@@ -130,10 +133,10 @@
     {
       "id": "cognizant",
       "company": "Cognizant",
-      "role": "Software Engineer",
+      "role": "Software Engineer \u2013 Data Engineering & Analytics",
       "period": "October 2021 \u2013 April 2024",
       "location": "Hyderabad, India",
-      "summary": "Contributed to enterprise software delivery in client-facing engineering environments.",
+      "summary": "Delivered data engineering, analytics, and application-support work in client-facing enterprise environments.",
       "stack": [
         "Java",
         "Spring Boot",
@@ -145,11 +148,11 @@
       "image": "images/experience/cognizant.svg",
       "imageAlt": "Illustration of a React form sending a REST request to a Spring Boot service backed by MySQL.",
       "bullets": [
-        "Developed and maintained Java Spring Boot application components and REST APIs within established development, testing, and release processes.",
-        "Built and maintained React and TypeScript interface components for data display, form validation, and application workflows, integrating them with backend services.",
-        "Worked with MySQL queries and indexing to support application data access and reporting; investigated software defects, documented root causes, and coordinated fixes with engineering and business stakeholders.",
-        "Supported JUnit testing, Docker-based environments, AWS deployment workflows, CI/CD, release validation, and production issue resolution across iterative software deliveries.",
-        "Participated in Agile delivery and code reviews, and created technical documentation and handoff materials explaining application behavior, recurring issues, and maintenance procedures."
+        "Integrated data from multiple enterprise systems through ETL workflows, applying transformation logic and preparing structured datasets for reporting and downstream business analysis.",
+        "Authored Oracle SQL queries and developed joins, aggregations, stored procedures, and analytical views to extract relational data, reconcile records, and support operational reporting; also worked with MySQL databases for application-level data access.",
+        "Automated recurring data preparation, reconciliation, and validation activities with Python scripts, reducing repetitive manual steps across multi-system workflows.",
+        "Supported Java and Spring Boot REST services and React and TypeScript components used to expose application functionality and access enterprise data.",
+        "Diagnosed data-processing failures and service issues using Datadog and Elasticsearch, and partnered with engineering teams on production troubleshooting and issue resolution; also supported deployments on AWS infrastructure."
       ]
     }
   ],
