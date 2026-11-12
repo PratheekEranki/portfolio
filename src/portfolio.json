@@ -1,11 +1,11 @@
 {
   "profile": {
     "name": "Pratheek Eranki",
-    "title": "Software Engineer · AI & Data",
+    "title": "Data Scientist · AI & ML",
     "headline": "Building software. Making data useful.",
-    "intro": "I work across software engineering and research data workflows, from enterprise applications to sleep EEG and fMRI research, and build full-stack, AI agent, and machine learning projects.",
+    "intro": "I work across data science, machine learning, and software engineering — from enterprise application delivery to clinical fMRI and EEG research, and build full-stack, AI agent, and machine learning projects.",
     "highlights": [
-      { "value": "2.5 yrs", "label": "Enterprise software delivery at Cognizant" },
+      { "value": "4+ yrs", "label": "Professional experience across enterprise software, data science, and research" },
       { "value": "1 paper", "label": "Co-authored, accepted in Computers in Biology and Medicine" },
       { "value": "18", "label": "Project case studies with linked evidence" },
       { "value": "3.87", "label": "GPA, M.S. in Data Science" }
@@ -16,25 +16,40 @@
     "github": "https://github.com/PratheekEranki",
     "linkedin": "https://www.linkedin.com/in/pratheekeranki64/",
     "credentialsUrl": "https://www.linkedin.com/in/pratheekeranki64/details/certifications/",
-    "resumeSummary": "Software engineer with experience in enterprise application delivery, sleep EEG and fMRI research data preparation, and legislative data analysis. Builds full-stack applications and AI/data projects using Python, Java, SQL, React, and machine learning tools. Co-author of the Rhamba research publication."
+    "resumeSummary": "Data scientist and software engineer with experience in enterprise application delivery, clinical fMRI and EEG research, legislative data analysis, and ML model development. Builds full-stack applications and AI/data pipelines using Python, SQL, Java, React, and machine learning tools. Co-author of the Rhamba research publication."
   },
   "experience": [
     {
+      "id": "citiustech",
+      "company": "CitiusTech",
+      "role": "Data Scientist",
+      "period": "June 2026 – Present",
+      "location": "Remote, United States",
+      "summary": "Applying data science and ML to healthcare technology solutions.",
+      "stack": ["Python", "SQL", "Machine Learning", "Azure", "Power BI"],
+      "bullets": [
+        "Developing and deploying machine learning models and data pipelines in a healthcare technology environment.",
+        "Working with structured clinical and operational datasets to support analytics, reporting, and decision-support workflows.",
+        "Collaborating with cross-functional teams to translate business requirements into data-driven solutions."
+      ]
+    },
+    {
       "id": "st-jude",
       "company": "St. Jude Children's Research Hospital",
-      "role": "Software Engineer",
+      "role": "AI Research & Development Intern",
       "period": "September 2025 – May 2026",
       "location": "Memphis, TN",
-      "summary": "Contributed to software and data workflows supporting sleep EEG and fMRI research in a clinical research environment.",
-      "stack": ["PyTorch", "TensorFlow", "Transformers", "Mamba", "CBraMod"],
+      "summary": "Contributed to ML model development and clinical data workflows supporting fMRI and EEG research.",
+      "stack": ["PyTorch", "TensorFlow", "Transformers", "Mamba", "Python", "Azure"],
       "image": "images/experience/st-jude.svg",
-      "imageAlt": "Illustration of multichannel sleep EEG traces beside an fMRI voxel grid.",
+      "imageAlt": "Illustration of multichannel fMRI voxel grids and EEG traces feeding into a model training workflow.",
       "bullets": [
-        "Prepared and validated sleep EEG and fMRI data for downstream research analysis, resolving data-quality and formatting issues while maintaining traceable processing steps.",
-        "Used PyTorch and TensorFlow in research workflows involving Transformers, self-attention, and Mamba architectures; supported model preparation, training, and fine-tuning experiments.",
-        "Worked with CBraMod-based EEG sleep-staging workflows and self-supervised fMRI experiments, connecting data preparation with model inputs and downstream evaluation.",
-        "Collaborated with researchers to translate study requirements into repeatable processing and analysis workflows, and developed utilities to reduce repetitive preparation work.",
-        "Documented processing procedures, validation checks, experiment configurations, and technical decisions so research workflows could be reproduced, reviewed, and maintained."
+        "Contributed to the Rhamba project, a region-aware hybrid Attention-Mamba framework for self-supervised learning on resting-state fMRI data, using ABIDE for pretraining and ADHD-200 and COBRE for downstream evaluation.",
+        "Prepared and validated clinical fMRI and EEG datasets under IRB-governed data access protocols, resolving data-quality and formatting issues while maintaining reproducible, traceable processing steps.",
+        "Implemented model training and fine-tuning experiments in PyTorch and TensorFlow, working with Transformer, self-attention, and Mamba architectures for representation learning tasks.",
+        "Applied statistical evaluation methods including cross-validation, hypothesis testing, and benchmarking to assess model performance and guide experimental improvements.",
+        "Developed Python-based data processing utilities to automate repetitive preparation steps and ensure consistent inputs across research experiments.",
+        "Documented experiment configurations, processing procedures, validation checks, and technical decisions to support reproducibility and research review."
       ]
     },
     {
@@ -43,23 +58,38 @@
       "role": "Graduate Student Research Assistant",
       "period": "March 2025 – August 2025",
       "location": "Memphis, TN",
-      "summary": "Conducted data-focused research using legislative records obtained through LegiScan.",
-      "stack": ["LegiScan API", "SQL", "Excel", "Tableau", "Plotly"],
+      "summary": "Conducted EEG model adaptation experiments and built a legislative data analysis application.",
+      "stack": ["Python", "PyTorch", "CBraMod", "LegiScan API", "SQL", "Plotly", "Tableau"],
       "image": "images/experience/memphis.svg",
-      "imageAlt": "Illustration of legislative documents flowing into a standardized table and then into charts.",
+      "imageAlt": "Illustration of EEG traces flowing into a patch-based model alongside legislative documents flowing into dashboards.",
       "bullets": [
-        "Built reproducible workflows to collect legislative records through the LegiScan API, clean source data, and organize structured SQL datasets for research analysis.",
-        "Standardized bill identifiers, jurisdictions, legislative status, sponsors, and subject classifications to support consistent comparisons across legislative records.",
-        "Used SQL and Excel to clean, deduplicate, and align legislative records with demographic data by state and year for comparative analysis.",
-        "Performed exploratory analysis of legislative activity and prepared Tableau and Plotly views to communicate trends and structured findings for faculty review.",
-        "Documented data definitions, transformation logic, API collection steps, and known limitations so research workflows and datasets could be reproduced and extended."
+        "Adapted CBraMod, a pretrained EEG representation model, to ISRUC sleep-staging data by modifying data preparation, pretraining, and fine-tuning workflows to fit a new EEG dataset and task.",
+        "Built preprocessing pipelines to convert ISRUC EEG recordings into patch-based inputs compatible with the CBraMod architecture, and developed patch visualizations to validate segment representations.",
+        "Developed a legislative data analysis application using the LegiScan API to retrieve, clean, and store bill records across 14+ US states, merging sponsor data with ACS district-level demographic data (2009-2023).",
+        "Designed and built interactive analysis dashboards using Plotly and Tableau to communicate legislative activity trends, state-level comparisons, and sponsor-level demographic patterns for faculty review.",
+        "Built reproducible data workflows using Python, SQL, and Excel to standardize bill identifiers, jurisdictions, legislative status, and subject classifications for consistent cross-state analysis.",
+        "Documented data definitions, transformation logic, model adaptation steps, and known limitations so research workflows and datasets could be reproduced and extended."
+      ]
+    },
+    {
+      "id": "hexaware",
+      "company": "Hexaware Technologies",
+      "role": "Data Scientist",
+      "period": "December 2023 – June 2024",
+      "location": "India (Remote)",
+      "summary": "Delivered data science and analytics solutions in a client-facing consulting environment.",
+      "stack": ["Python", "SQL", "Machine Learning", "Power BI", "Azure"],
+      "bullets": [
+        "Built and maintained machine learning models and data pipelines to support client analytics and reporting requirements.",
+        "Worked with structured datasets to perform data cleaning, feature engineering, and model evaluation across data science delivery projects.",
+        "Collaborated with client stakeholders to translate business problems into analytical solutions and communicated findings through dashboards and reports."
       ]
     },
     {
       "id": "cognizant",
       "company": "Cognizant",
       "role": "Software Engineer",
-      "period": "October 2021 – April 2024",
+      "period": "January 2022 – November 2023",
       "location": "Hyderabad, India",
       "summary": "Contributed to enterprise software delivery in client-facing engineering environments.",
       "stack": ["Java", "Spring Boot", "React", "TypeScript", "MySQL", "AWS"],
@@ -187,6 +217,7 @@
         "MLflow",
         "Evidently",
         "AWS",
+        "Azure",
         "Docker",
         "Docker Compose",
         "Git",
@@ -261,7 +292,7 @@
       "contribution": "Co-authored the Rhamba publication on region-aware self-supervised fMRI representation learning. The linked paper provides the study and full author list.",
       "approach": [
         "Compared region-aware masking strategies and hybrid Attention-Mamba configurations.",
-        "Evaluated pretrained representations on downstream classification tasks.",
+        "Evaluated pretrained representations on downstream classification tasks using ADHD-200 and COBRE after ABIDE pretraining.",
         "Examined model behavior and interpretability across configurations."
       ],
       "evaluation": {
@@ -995,6 +1026,7 @@
         "MLflow",
         "Evidently",
         "AWS",
+        "Azure",
         "Docker",
         "Docker Compose",
         "Git",
