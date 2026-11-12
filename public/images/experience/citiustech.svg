@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <rect width="800" height="480" fill="#0f172a"/>
+  <rect x="60" y="160" width="120" height="160" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="80" y="180" width="80" height="8" rx="4" fill="#3b82f6"/>
+  <rect x="80" y="200" width="60" height="6" rx="3" fill="#475569"/>
+  <rect x="80" y="216" width="70" height="6" rx="3" fill="#475569"/>
+  <rect x="80" y="232" width="50" height="6" rx="3" fill="#475569"/>
+  <rect x="80" y="260" width="80" height="28" rx="6" fill="#2563eb"/>
+  <text x="120" y="279" font-family="monospace" font-size="11" fill="#fff" text-anchor="middle">ML Pipeline</text>
+  <line x1="180" y1="240" x2="260" y2="240" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="260,235 270,240 260,245" fill="#3b82f6"/>
+  <rect x="270" y="160" width="140" height="160" rx="8" fill="#1e3a5f" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="340" y="225" font-family="monospace" font-size="12" fill="#a5b4fc" text-anchor="middle">Python</text>
+  <text x="340" y="245" font-family="monospace" font-size="12" fill="#a5b4fc" text-anchor="middle">SQL</text>
+  <text x="340" y="265" font-family="monospace" font-size="12" fill="#a5b4fc" text-anchor="middle">Azure ML</text>
+  <line x1="410" y1="240" x2="490" y2="240" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="490,235 500,240 490,245" fill="#6366f1"/>
+  <rect x="500" y="160" width="140" height="160" rx="8" fill="#1e3a5f" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="520" y="180" width="100" height="12" rx="4" fill="#10b981" opacity="0.3"/>
+  <rect x="520" y="200" width="80" height="8" rx="4" fill="#10b981" opacity="0.5"/>
+  <rect x="520" y="216" width="90" height="8" rx="4" fill="#10b981" opacity="0.4"/>
+  <rect x="520" y="232" width="70" height="8" rx="4" fill="#10b981" opacity="0.6"/>
+  <text x="570" y="290" font-family="monospace" font-size="11" fill="#6ee7b7" text-anchor="middle">Power BI</text>
+</svg>

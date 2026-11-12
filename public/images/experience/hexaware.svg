@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <rect width="800" height="480" fill="#0f172a"/>
+  <rect x="60" y="150" width="130" height="180" rx="8" fill="#1a2744" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="80" y="170" width="90" height="10" rx="5" fill="#6366f1"/>
+  <rect x="80" y="192" width="70" height="6" rx="3" fill="#475569"/>
+  <rect x="80" y="208" width="80" height="6" rx="3" fill="#475569"/>
+  <rect x="80" y="224" width="60" height="6" rx="3" fill="#475569"/>
+  <text x="125" y="310" font-family="monospace" font-size="11" fill="#a5b4fc" text-anchor="middle">Client Data</text>
+  <line x1="190" y1="240" x2="270" y2="240" stroke="#6366f1" stroke-width="2" stroke-dasharray="5,4"/>
+  <polygon points="270,235 280,240 270,245" fill="#6366f1"/>
+  <rect x="280" y="150" width="140" height="180" rx="8" fill="#1a2744" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="350" y="215" font-family="monospace" font-size="12" fill="#c4b5fd" text-anchor="middle">Python</text>
+  <text x="350" y="235" font-family="monospace" font-size="12" fill="#c4b5fd" text-anchor="middle">SQL</text>
+  <text x="350" y="255" font-family="monospace" font-size="12" fill="#c4b5fd" text-anchor="middle">Machine</text>
+  <text x="350" y="272" font-family="monospace" font-size="12" fill="#c4b5fd" text-anchor="middle">Learning</text>
+  <line x1="420" y1="240" x2="500" y2="240" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="5,4"/>
+  <polygon points="500,235 510,240 500,245" fill="#8b5cf6"/>
+  <rect x="510" y="150" width="140" height="180" rx="8" fill="#1a2744" stroke="#06b6d4" stroke-width="1.5"/>
+  <rect x="525" y="170" width="110" height="16" rx="4" fill="#0e7490" opacity="0.6"/>
+  <rect x="525" y="194" width="90" height="10" rx="3" fill="#06b6d4" opacity="0.4"/>
+  <rect x="525" y="212" width="100" height="10" rx="3" fill="#06b6d4" opacity="0.5"/>
+  <rect x="525" y="230" width="80" height="10" rx="3" fill="#06b6d4" opacity="0.3"/>
+  <text x="580" y="310" font-family="monospace" font-size="11" fill="#67e8f9" text-anchor="middle">Azure / Power BI</text>
+</svg>

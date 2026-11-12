@@ -1,14 +1,26 @@
 {
   "profile": {
     "name": "Pratheek Eranki",
-    "title": "Data Scientist · AI & ML",
+    "title": "Data Scientist \u00b7 AI & ML",
     "headline": "Building software. Making data useful.",
-    "intro": "I work across data science, machine learning, and software engineering — from enterprise application delivery to clinical fMRI and EEG research, and build full-stack, AI agent, and machine learning projects.",
+    "intro": "I work across data science, machine learning, and software engineering \u2014 from enterprise application delivery to clinical fMRI and EEG research, and build full-stack, AI agent, and machine learning projects.",
     "highlights": [
-      { "value": "4+ yrs", "label": "Professional experience across enterprise software, data science, and research" },
-      { "value": "1 paper", "label": "Co-authored, accepted in Computers in Biology and Medicine" },
-      { "value": "18", "label": "Project case studies with linked evidence" },
-      { "value": "3.87", "label": "GPA, M.S. in Data Science" }
+      {
+        "value": "4+ yrs",
+        "label": "Professional experience across enterprise software, data science, and research"
+      },
+      {
+        "value": "1 paper",
+        "label": "Co-authored, accepted in Computers in Biology and Medicine"
+      },
+      {
+        "value": "18",
+        "label": "Project case studies with linked evidence"
+      },
+      {
+        "value": "3.87",
+        "label": "GPA, M.S. in Data Science"
+      }
     ],
     "email": "pratheek.eranki@gmail.com",
     "phone": "+1 901-902-8689",
@@ -23,28 +35,43 @@
       "id": "citiustech",
       "company": "CitiusTech",
       "role": "Data Scientist",
-      "period": "June 2026 – Present",
+      "period": "June 2026 \u2013 Present",
       "location": "Remote, United States",
       "summary": "Applying data science and ML to healthcare technology solutions.",
-      "stack": ["Python", "SQL", "Machine Learning", "Azure", "Power BI"],
+      "stack": [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "Azure",
+        "Power BI"
+      ],
       "bullets": [
-        "Developing and deploying machine learning models and data pipelines in a healthcare technology environment.",
-        "Working with structured clinical and operational datasets to support analytics, reporting, and decision-support workflows.",
-        "Collaborating with cross-functional teams to translate business requirements into data-driven solutions."
-      ]
+        "Developing and deploying machine learning models and Python-based data pipelines in a healthcare technology environment to support clinical analytics and reporting.",
+        "Working with SQL databases and structured clinical and operational datasets to deliver analytics, decision-support, and Power BI reporting workflows.",
+        "Collaborating across teams to translate business requirements into data-driven solutions using Azure cloud services and ML tooling."
+      ],
+      "image": "images/experience/citiustech.svg",
+      "imageAlt": "Illustration of healthcare data flowing into a machine learning pipeline with analytics output."
     },
     {
       "id": "st-jude",
       "company": "St. Jude Children's Research Hospital",
       "role": "AI Research & Development Intern",
-      "period": "September 2025 – May 2026",
+      "period": "September 2025 \u2013 May 2026",
       "location": "Memphis, TN",
-      "summary": "Contributed to ML model development and clinical data workflows supporting fMRI and EEG research.",
-      "stack": ["PyTorch", "TensorFlow", "Transformers", "Mamba", "Python", "Azure"],
+      "summary": "Contributed to ML model development and clinical data workflows supporting sleep EEG and fMRI research.",
+      "stack": [
+        "PyTorch",
+        "TensorFlow",
+        "Transformers",
+        "Mamba",
+        "Python",
+        "Azure"
+      ],
       "image": "images/experience/st-jude.svg",
       "imageAlt": "Illustration of multichannel fMRI voxel grids and EEG traces feeding into a model training workflow.",
       "bullets": [
-        "Contributed to the Rhamba project, a region-aware hybrid Attention-Mamba framework for self-supervised learning on resting-state fMRI data, using ABIDE for pretraining and ADHD-200 and COBRE for downstream evaluation.",
+        "Contributed to self-supervised representation learning experiments on resting-state fMRI data, including region-aware masking strategies and hybrid encoder configurations evaluated on downstream classification tasks.",
         "Prepared and validated clinical fMRI and EEG datasets under IRB-governed data access protocols, resolving data-quality and formatting issues while maintaining reproducible, traceable processing steps.",
         "Implemented model training and fine-tuning experiments in PyTorch and TensorFlow, working with Transformer, self-attention, and Mamba architectures for representation learning tasks.",
         "Applied statistical evaluation methods including cross-validation, hypothesis testing, and benchmarking to assess model performance and guide experimental improvements.",
@@ -56,16 +83,23 @@
       "id": "memphis",
       "company": "University of Memphis",
       "role": "Graduate Student Research Assistant",
-      "period": "March 2025 – August 2025",
+      "period": "March 2025 \u2013 August 2025",
       "location": "Memphis, TN",
-      "summary": "Conducted EEG model adaptation experiments and built a legislative data analysis application.",
-      "stack": ["Python", "PyTorch", "CBraMod", "LegiScan API", "SQL", "Plotly", "Tableau"],
+      "summary": "Conducted data-focused research using legislative records obtained through LegiScan.",
+      "stack": [
+        "Python",
+        "PyTorch",
+        "CBraMod",
+        "LegiScan API",
+        "SQL",
+        "Plotly",
+        "Tableau"
+      ],
       "image": "images/experience/memphis.svg",
       "imageAlt": "Illustration of EEG traces flowing into a patch-based model alongside legislative documents flowing into dashboards.",
       "bullets": [
-        "Adapted CBraMod, a pretrained EEG representation model, to ISRUC sleep-staging data by modifying data preparation, pretraining, and fine-tuning workflows to fit a new EEG dataset and task.",
-        "Built preprocessing pipelines to convert ISRUC EEG recordings into patch-based inputs compatible with the CBraMod architecture, and developed patch visualizations to validate segment representations.",
-        "Developed a legislative data analysis application using the LegiScan API to retrieve, clean, and store bill records across 14+ US states, merging sponsor data with ACS district-level demographic data (2009-2023).",
+        "Adapted CBraMod, a pretrained EEG representation model, to ISRUC sleep-staging data by modifying data preparation, pretraining, and fine-tuning workflows; built patch visualizations to validate segment representations.",
+        "Developed a legislative data analysis application using the LegiScan API to retrieve, clean, and store bill records across 14+ US states, merging sponsor data with ACS district-level demographic data (2009\u20132023).",
         "Designed and built interactive analysis dashboards using Plotly and Tableau to communicate legislative activity trends, state-level comparisons, and sponsor-level demographic patterns for faculty review.",
         "Built reproducible data workflows using Python, SQL, and Excel to standardize bill identifiers, jurisdictions, legislative status, and subject classifications for consistent cross-state analysis.",
         "Documented data definitions, transformation logic, model adaptation steps, and known limitations so research workflows and datasets could be reproduced and extended."
@@ -75,24 +109,39 @@
       "id": "hexaware",
       "company": "Hexaware Technologies",
       "role": "Data Scientist",
-      "period": "December 2023 – June 2024",
+      "period": "December 2023 \u2013 June 2024",
       "location": "India (Remote)",
       "summary": "Delivered data science and analytics solutions in a client-facing consulting environment.",
-      "stack": ["Python", "SQL", "Machine Learning", "Power BI", "Azure"],
+      "stack": [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "Power BI",
+        "Azure"
+      ],
       "bullets": [
-        "Built and maintained machine learning models and data pipelines to support client analytics and reporting requirements.",
-        "Worked with structured datasets to perform data cleaning, feature engineering, and model evaluation across data science delivery projects.",
-        "Collaborated with client stakeholders to translate business problems into analytical solutions and communicated findings through dashboards and reports."
-      ]
+        "Built and maintained machine learning models and Python-based data pipelines to support client analytics and reporting requirements in a consulting environment.",
+        "Worked with SQL databases and structured datasets to perform data cleaning, feature engineering, and model evaluation across data science delivery projects.",
+        "Communicated findings through Power BI dashboards and reports, collaborating with stakeholders to translate business problems into analytical solutions using Azure services."
+      ],
+      "image": "images/experience/hexaware.svg",
+      "imageAlt": "Illustration of data flowing through a consulting analytics pipeline with dashboard output."
     },
     {
       "id": "cognizant",
       "company": "Cognizant",
       "role": "Software Engineer",
-      "period": "January 2022 – November 2023",
+      "period": "October 2021 \u2013 April 2024",
       "location": "Hyderabad, India",
       "summary": "Contributed to enterprise software delivery in client-facing engineering environments.",
-      "stack": ["Java", "Spring Boot", "React", "TypeScript", "MySQL", "AWS"],
+      "stack": [
+        "Java",
+        "Spring Boot",
+        "React",
+        "TypeScript",
+        "MySQL",
+        "AWS"
+      ],
       "image": "images/experience/cognizant.svg",
       "imageAlt": "Illustration of a React form sending a REST request to a Spring Boot service backed by MySQL.",
       "bullets": [
@@ -107,8 +156,19 @@
   "skills": [
     {
       "title": "Languages",
-      "items": ["Python", "SQL", "Java", "JavaScript", "TypeScript", "R", "Scala"],
-      "projectIds": ["opsflow", "academic-rag"]
+      "items": [
+        "Python",
+        "SQL",
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "R",
+        "Scala"
+      ],
+      "projectIds": [
+        "opsflow",
+        "academic-rag"
+      ]
     },
     {
       "title": "Deep learning & architectures",
@@ -122,7 +182,10 @@
         "Model fine-tuning",
         "CBraMod"
       ],
-      "projectIds": ["rhamba", "cbramod"]
+      "projectIds": [
+        "rhamba",
+        "cbramod"
+      ]
     },
     {
       "title": "LLMs & retrieval",
@@ -136,7 +199,10 @@
         "LLM APIs (OpenAI, Anthropic, Gemini)",
         "Prompt engineering"
       ],
-      "projectIds": ["fixbot", "academic-rag"]
+      "projectIds": [
+        "fixbot",
+        "academic-rag"
+      ]
     },
     {
       "title": "Machine learning & evaluation",
@@ -149,7 +215,10 @@
         "SHAP",
         "BLEU / ROUGE / F1 evaluation"
       ],
-      "projectIds": ["demandsense", "segmentwise"]
+      "projectIds": [
+        "demandsense",
+        "segmentwise"
+      ]
     },
     {
       "title": "Research & ML compute",
@@ -161,7 +230,10 @@
         "Multi-GPU training",
         "HPC clusters"
       ],
-      "projectIds": ["rhamba", "cbramod"]
+      "projectIds": [
+        "rhamba",
+        "cbramod"
+      ]
     },
     {
       "title": "Data & visualization",
@@ -177,7 +249,10 @@
         "Seaborn",
         "Excel"
       ],
-      "projectIds": ["bank-marketing", "driftboard"]
+      "projectIds": [
+        "bank-marketing",
+        "driftboard"
+      ]
     },
     {
       "title": "Backend & APIs",
@@ -190,12 +265,25 @@
         "WebSockets",
         "Apache Kafka"
       ],
-      "projectIds": ["opsflow", "charity-aid"]
+      "projectIds": [
+        "opsflow",
+        "charity-aid"
+      ]
     },
     {
       "title": "Frontend & applications",
-      "items": ["React", "HTML", "CSS", "Tailwind CSS", "Streamlit", "Gradio"],
-      "projectIds": ["homesearch", "fixbot"]
+      "items": [
+        "React",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Streamlit",
+        "Gradio"
+      ],
+      "projectIds": [
+        "homesearch",
+        "fixbot"
+      ]
     },
     {
       "title": "Databases & persistence",
@@ -209,7 +297,10 @@
         "Relational database design",
         "Query optimization"
       ],
-      "projectIds": ["ecommerce-database", "opsflow"]
+      "projectIds": [
+        "ecommerce-database",
+        "opsflow"
+      ]
     },
     {
       "title": "MLOps, delivery & practices",
@@ -227,20 +318,23 @@
         "Agile / Scrum",
         "Technical documentation"
       ],
-      "projectIds": ["demandsense", "driftboard"]
+      "projectIds": [
+        "demandsense",
+        "driftboard"
+      ]
     }
   ],
   "education": [
     {
       "school": "University of Memphis",
       "degree": "M.S. in Data Science",
-      "period": "Aug 2024 – May 2026",
+      "period": "Aug 2024 \u2013 May 2026",
       "note": "GPA 3.87 / 4.0"
     },
     {
       "school": "Gayatri Vidya Parishad College of Engineering",
       "degree": "B.E. in Electronics & Communication Engineering",
-      "period": "Jul 2017 – Aug 2021",
+      "period": "Jul 2017 \u2013 Aug 2021",
       "note": "GPA 8.63 / 10.0",
       "includeInResume": false,
       "includeInPortfolio": false
@@ -250,7 +344,7 @@
     {
       "title": "AWS Certified Cloud Practitioner",
       "issuer": "Amazon Web Services",
-      "date": "Nov 2023 · Expires Nov 2026"
+      "date": "Nov 2023 \u00b7 Expires Nov 2026"
     },
     {
       "title": "Microsoft Certified: Azure Fundamentals",
@@ -275,13 +369,23 @@
       "category": "Research",
       "featured": false,
       "eyebrow": "Biomedical AI research",
-      "signal": "Accepted research · Co-author",
+      "signal": "Accepted research \u00b7 Co-author",
       "summary": "Region-aware self-supervised learning for resting-state fMRI, combining Attention and Mamba architectures.",
       "role": "Collaborative research co-author.",
-      "tags": ["PyTorch", "Attention–Mamba", "fMRI", "Self-supervised learning"],
+      "tags": [
+        "PyTorch",
+        "Attention\u2013Mamba",
+        "fMRI",
+        "Self-supervised learning"
+      ],
       "image": "images/rhamba.svg",
       "imageAlt": "Schematic of the Rhamba workflow: fMRI, region-aware masking, hybrid encoder, downstream evaluation. This is an explanatory diagram, not measured brain data.",
-      "flow": ["fMRI input", "Region-aware masking", "Hybrid encoder", "Evaluation"],
+      "flow": [
+        "fMRI input",
+        "Region-aware masking",
+        "Hybrid encoder",
+        "Evaluation"
+      ],
       "links": [
         {
           "label": "Read paper",
@@ -306,7 +410,7 @@
         "title": "Rhamba: Region-Aware Hybrid Attention-Mamba Framework for Self-Supervised Learning in Resting-State fMRI",
         "authors": "Pankaj Pandey, Ruthwik Reddy Doodipala, Pratheek Eranki, Carolina Torres-Rojas, Manob Jyoti Saikia, Ranganatha Sitaram",
         "status": "Accepted for publication in Computers in Biology and Medicine, as reported by the arXiv record.",
-        "version": "arXiv:2605.01240 · v3, September 18, 2026"
+        "version": "arXiv:2605.01240 \u00b7 v3, September 18, 2026"
       }
     },
     {
@@ -315,13 +419,24 @@
       "category": "AI / ML",
       "featured": true,
       "eyebrow": "Agent systems",
-      "signal": "3 tools · Inspectable execution",
+      "signal": "3 tools \u00b7 Inspectable execution",
       "summary": "A conversational troubleshooting agent that connects symptom lookup, repair pricing, and semantic document search.",
       "role": "Application implementation across agent orchestration, API, tools, and interface.",
-      "tags": ["Python", "NVIDIA NIM", "FAISS", "FastAPI", "Gradio"],
+      "tags": [
+        "Python",
+        "NVIDIA NIM",
+        "FAISS",
+        "FastAPI",
+        "Gradio"
+      ],
       "image": "images/fixbot.jpg",
       "imageAlt": "FixBot application showing its chat interface, device selector, and example troubleshooting questions.",
-      "flow": ["Message", "Tool selection", "Structured lookup", "Answer"],
+      "flow": [
+        "Message",
+        "Tool selection",
+        "Structured lookup",
+        "Answer"
+      ],
       "links": [
         {
           "label": "View code",
@@ -353,10 +468,21 @@
       "signal": "51,000 generated listings",
       "summary": "A property search application with a Spring Boot API, PostgreSQL storage, and a React interface with map-based search.",
       "role": "Full-stack application, ingestion, search API, and container configuration.",
-      "tags": ["Java", "Spring Boot", "PostgreSQL", "React", "Docker"],
+      "tags": [
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "React",
+        "Docker"
+      ],
       "image": "images/homesearch.jpg",
       "imageAlt": "HomeSearch screenshot with property filters, listing cards, and an interactive map.",
-      "flow": ["CSV ingestion", "PostgreSQL", "Search API", "Map interface"],
+      "flow": [
+        "CSV ingestion",
+        "PostgreSQL",
+        "Search API",
+        "Map interface"
+      ],
       "links": [
         {
           "label": "View code",
@@ -384,11 +510,21 @@
       "category": "AI / ML",
       "featured": false,
       "eyebrow": "Retrieval & evaluation",
-      "signal": "ROUGE-1: 0.3281 → 0.3543",
+      "signal": "ROUGE-1: 0.3281 \u2192 0.3543",
       "summary": "Local academic question answering with FAISS retrieval, quantized Mistral inference, and four query routes.",
       "role": "Course project implementation and baseline evaluation.",
-      "tags": ["FAISS", "Mistral-7B", "Gradio", "Python"],
-      "flow": ["Documents", "FAISS index", "Query router", "Mistral answer"],
+      "tags": [
+        "FAISS",
+        "Mistral-7B",
+        "Gradio",
+        "Python"
+      ],
+      "flow": [
+        "Documents",
+        "FAISS index",
+        "Query router",
+        "Mistral answer"
+      ],
       "links": [
         {
           "label": "View code",
@@ -408,13 +544,37 @@
       ],
       "evaluation": {
         "text": "Saved aggregate results on 10 textbook questions. Higher is better for these overlap metrics; these results are a small development benchmark.",
-        "columns": ["Metric", "Base Mistral", "RAG"],
+        "columns": [
+          "Metric",
+          "Base Mistral",
+          "RAG"
+        ],
         "rows": [
-          ["BLEU-1", "0.2215", "0.2366"],
-          ["ROUGE-1", "0.3281", "0.3543"],
-          ["ROUGE-L", "0.2219", "0.2535"],
-          ["Token F1", "0.3142", "0.3272"],
-          ["Exact match", "0.0000", "0.0000"]
+          [
+            "BLEU-1",
+            "0.2215",
+            "0.2366"
+          ],
+          [
+            "ROUGE-1",
+            "0.3281",
+            "0.3543"
+          ],
+          [
+            "ROUGE-L",
+            "0.2219",
+            "0.2535"
+          ],
+          [
+            "Token F1",
+            "0.3142",
+            "0.3272"
+          ],
+          [
+            "Exact match",
+            "0.0000",
+            "0.0000"
+          ]
         ]
       },
       "limitations": [
@@ -432,10 +592,20 @@
       "signal": "A/B testing + metric monitoring",
       "summary": "A campaign analytics dashboard combining hypothesis tests, false-discovery correction, and KPI anomaly detection.",
       "role": "Analytics pipeline, statistical testing, and dashboard implementation.",
-      "tags": ["Python", "SciPy", "Streamlit", "Plotly"],
+      "tags": [
+        "Python",
+        "SciPy",
+        "Streamlit",
+        "Plotly"
+      ],
       "image": "images/driftboard.jpg",
       "imageAlt": "DriftBoard experiment browser with an effect-size and significance plot.",
-      "flow": ["Campaign data", "Hypothesis tests", "FDR correction", "Dashboard"],
+      "flow": [
+        "Campaign data",
+        "Hypothesis tests",
+        "FDR correction",
+        "Dashboard"
+      ],
       "links": [
         {
           "label": "View code",
@@ -471,8 +641,18 @@
       "signal": "1.2M hourly observations",
       "summary": "Pollution and weather analysis across 200+ cities, with AQI classification and clustering of pollution regimes.",
       "role": "Collaborative course project with Sai Teja Koppolu.",
-      "tags": ["scikit-learn", "pandas", "K-Means", "Tableau"],
-      "flow": ["API collection", "Cleaning", "Models & clusters", "Analysis"],
+      "tags": [
+        "scikit-learn",
+        "pandas",
+        "K-Means",
+        "Tableau"
+      ],
+      "flow": [
+        "API collection",
+        "Cleaning",
+        "Models & clusters",
+        "Analysis"
+      ],
       "links": [
         {
           "label": "View code",
@@ -482,7 +662,7 @@
       "problem": "Explore how pollution measurements vary by city and time, and compare supervised AQI labeling with unsupervised structure.",
       "contribution": "Contributed to the data collection, preprocessing, model comparison, and visualization workflow.",
       "approach": [
-        "Combines pollutant and weather measurements from April–November 2025.",
+        "Combines pollutant and weather measurements from April\u2013November 2025.",
         "Compares tree-based classifiers and examines K-Means clusters with low-dimensional visualizations.",
         "Summarizes geographical and temporal pollution patterns."
       ],
@@ -504,8 +684,18 @@
       "signal": "Neural network F1: 0.5869",
       "summary": "An R-based comparison of classifiers on the UCI Bank Marketing data, with explicit class-imbalance trade-offs.",
       "role": "Statistical analysis, classifier comparison, and reporting.",
-      "tags": ["R", "caret", "Random Forest", "SVM"],
-      "flow": ["UCI dataset", "Stratified split", "Classifiers", "Evaluation"],
+      "tags": [
+        "R",
+        "caret",
+        "Random Forest",
+        "SVM"
+      ],
+      "flow": [
+        "UCI dataset",
+        "Stratified split",
+        "Classifiers",
+        "Evaluation"
+      ],
       "links": [
         {
           "label": "Saved results",
@@ -521,11 +711,31 @@
       ],
       "evaluation": {
         "text": "Values from the saved model comparison. The analysis includes call duration, which is only known after the call.",
-        "columns": ["Model", "AUC", "F1", "Recall"],
+        "columns": [
+          "Model",
+          "AUC",
+          "F1",
+          "Recall"
+        ],
         "rows": [
-          ["Neural network", "0.9438", "0.5869", "0.5388"],
-          ["Random forest", "0.9453", "0.5453", "0.4634"],
-          ["Decision tree", "0.8457", "0.5775", "0.5442"]
+          [
+            "Neural network",
+            "0.9438",
+            "0.5869",
+            "0.5388"
+          ],
+          [
+            "Random forest",
+            "0.9453",
+            "0.5453",
+            "0.4634"
+          ],
+          [
+            "Decision tree",
+            "0.8457",
+            "0.5775",
+            "0.5442"
+          ]
         ]
       },
       "limitations": [
@@ -543,8 +753,18 @@
       "signal": "GRU had the lowest saved RMSE",
       "summary": "A comparison of GRU, LSTM, and Transformer models for next-day Walmart closing-price prediction.",
       "role": "Sequence-model experiments and comparative evaluation.",
-      "tags": ["GRU", "LSTM", "Transformer", "Time series"],
-      "flow": ["Price history", "60-day windows", "Sequence models", "Comparison"],
+      "tags": [
+        "GRU",
+        "LSTM",
+        "Transformer",
+        "Time series"
+      ],
+      "flow": [
+        "Price history",
+        "60-day windows",
+        "Sequence models",
+        "Comparison"
+      ],
       "links": [
         {
           "label": "Saved results",
@@ -555,16 +775,36 @@
       "contribution": "Compared model predictions and training behavior using shared saved evaluation outputs.",
       "approach": [
         "Uses historical Walmart price data and a 60-day lookback.",
-        "Compares MAE, RMSE, and R² across three architectures.",
+        "Compares MAE, RMSE, and R\u00b2 across three architectures.",
         "Keeps the observed model ranking visible, including the Transformer's weaker result."
       ],
       "evaluation": {
         "text": "Values reproduced from the saved comparison, in the scale used by that experiment. GRU performed best among these three models in this run.",
-        "columns": ["Model", "RMSE", "MAE", "R²"],
+        "columns": [
+          "Model",
+          "RMSE",
+          "MAE",
+          "R\u00b2"
+        ],
         "rows": [
-          ["GRU", "0.3696", "0.2396", "0.9847"],
-          ["LSTM", "1.0897", "0.8459", "0.8671"],
-          ["Transformer", "4.1934", "3.7046", "−0.9677"]
+          [
+            "GRU",
+            "0.3696",
+            "0.2396",
+            "0.9847"
+          ],
+          [
+            "LSTM",
+            "1.0897",
+            "0.8459",
+            "0.8671"
+          ],
+          [
+            "Transformer",
+            "4.1934",
+            "3.7046",
+            "\u22120.9677"
+          ]
         ]
       },
       "limitations": [
@@ -579,11 +819,21 @@
       "category": "Data",
       "featured": false,
       "eyebrow": "Exploratory modeling",
-      "signal": "TMDB data · Model comparison",
+      "signal": "TMDB data \u00b7 Model comparison",
       "summary": "Movie-rating analysis with feature engineering, statistical classifiers, and genre and release-period visualizations.",
       "role": "Data preparation, feature engineering, and exploratory model comparison.",
-      "tags": ["R", "TMDB API", "caret", "ggplot2"],
-      "flow": ["TMDB data", "Feature preparation", "Classifiers", "Analysis"],
+      "tags": [
+        "R",
+        "TMDB API",
+        "caret",
+        "ggplot2"
+      ],
+      "flow": [
+        "TMDB data",
+        "Feature preparation",
+        "Classifiers",
+        "Analysis"
+      ],
       "links": [
         {
           "label": "View code",
@@ -619,8 +869,18 @@
       "signal": "Donation and aid workflows",
       "summary": "A Spring Boot application for donor records, donation receipts, aid requests, and administrative workflows.",
       "role": "Backend application and workflow implementation.",
-      "tags": ["Java", "Spring Security", "MySQL", "JUnit"],
-      "flow": ["Donor workflow", "Authenticated API", "Persistence", "Receipts"],
+      "tags": [
+        "Java",
+        "Spring Security",
+        "MySQL",
+        "JUnit"
+      ],
+      "flow": [
+        "Donor workflow",
+        "Authenticated API",
+        "Persistence",
+        "Receipts"
+      ],
       "links": [
         {
           "label": "View code",
@@ -651,8 +911,18 @@
       "signal": "Live Kanban + event workflows",
       "summary": "A team workflow application with organization-scoped projects, live Kanban boards, and incident tracking.",
       "role": "Backend services, application workflows, and frontend integration.",
-      "tags": ["Spring Boot", "React", "PostgreSQL", "WebSockets"],
-      "flow": ["Team action", "Scoped API", "Events & persistence", "Live board"],
+      "tags": [
+        "Spring Boot",
+        "React",
+        "PostgreSQL",
+        "WebSockets"
+      ],
+      "flow": [
+        "Team action",
+        "Scoped API",
+        "Events & persistence",
+        "Live board"
+      ],
       "links": [
         {
           "label": "View code",
@@ -687,8 +957,18 @@
       "signal": "Credential checks + record matching",
       "summary": "A provider site-visit prototype with mobile-ID integration, manual matching, and an auditable result history.",
       "role": "Verification workflow, API integration, matching logic, and application interfaces.",
-      "tags": ["FastAPI", "React", "Android", "Identity SDKs"],
-      "flow": ["Visit record", "ID presentation", "Separate checks", "Audit record"],
+      "tags": [
+        "FastAPI",
+        "React",
+        "Android",
+        "Identity SDKs"
+      ],
+      "flow": [
+        "Visit record",
+        "ID presentation",
+        "Separate checks",
+        "Audit record"
+      ],
       "links": [
         {
           "label": "View code",
@@ -723,11 +1003,21 @@
       "category": "AI / ML",
       "featured": false,
       "eyebrow": "Forecasting systems",
-      "signal": "Training → serving → monitoring",
+      "signal": "Training \u2192 serving \u2192 monitoring",
       "summary": "A retail-demand forecasting project connecting feature generation, model experiments, an API, and drift reporting.",
       "role": "Forecasting pipeline, experiment tracking, serving, and monitoring integration.",
-      "tags": ["LightGBM", "XGBoost", "MLflow", "FastAPI"],
-      "flow": ["Sales history", "Lag features", "Forecast models", "API & monitoring"],
+      "tags": [
+        "LightGBM",
+        "XGBoost",
+        "MLflow",
+        "FastAPI"
+      ],
+      "flow": [
+        "Sales history",
+        "Lag features",
+        "Forecast models",
+        "API & monitoring"
+      ],
       "links": [
         {
           "label": "View code",
@@ -756,11 +1046,21 @@
       "category": "AI / ML",
       "featured": false,
       "eyebrow": "Tool use & escalation",
-      "signal": "6 support intents · Mock service tools",
+      "signal": "6 support intents \u00b7 Mock service tools",
       "summary": "A support-agent prototype combining tool use, escalation rules, prompt comparisons, and an inspection dashboard.",
       "role": "Implemented a project prototype with mock account tools, prompt iteration, routing rules, and monitoring views.",
-      "tags": ["LangChain", "NVIDIA NIM", "FastAPI", "Gradio"],
-      "flow": ["Support request", "Agent & tools", "Escalation rules", "Response & audit"],
+      "tags": [
+        "LangChain",
+        "NVIDIA NIM",
+        "FastAPI",
+        "Gradio"
+      ],
+      "flow": [
+        "Support request",
+        "Agent & tools",
+        "Escalation rules",
+        "Response & audit"
+      ],
       "links": [
         {
           "label": "View code",
@@ -792,8 +1092,18 @@
       "signal": "Segmentation + behavior models",
       "summary": "A dashboard for exploring customer segments, churn models, campaign response, and model explanations.",
       "role": "Built the segmentation, prediction, explanation, and dashboard workflow.",
-      "tags": ["K-Means", "XGBoost", "SHAP", "Streamlit"],
-      "flow": ["Customer data", "Segments", "Behavior models", "Dashboard"],
+      "tags": [
+        "K-Means",
+        "XGBoost",
+        "SHAP",
+        "Streamlit"
+      ],
+      "flow": [
+        "Customer data",
+        "Segments",
+        "Behavior models",
+        "Dashboard"
+      ],
       "links": [
         {
           "label": "View code",
@@ -830,8 +1140,18 @@
       "signal": "Synthetic-data benchmark + SHAP",
       "summary": "A transaction-classification experiment using XGBoost, imbalance handling, and global and local model explanations.",
       "role": "Implemented feature preparation, model training, saved evaluation summaries, and SHAP visualizations.",
-      "tags": ["XGBoost", "SHAP", "scikit-learn", "Python"],
-      "flow": ["Synthetic transactions", "Features", "Cross-validation", "SHAP analysis"],
+      "tags": [
+        "XGBoost",
+        "SHAP",
+        "scikit-learn",
+        "Python"
+      ],
+      "flow": [
+        "Synthetic transactions",
+        "Features",
+        "Cross-validation",
+        "SHAP analysis"
+      ],
       "links": [
         {
           "label": "View code",
@@ -863,11 +1183,21 @@
       "category": "Software",
       "featured": false,
       "eyebrow": "Relational data modeling",
-      "signal": "Schema · Queries · Indexes",
+      "signal": "Schema \u00b7 Queries \u00b7 Indexes",
       "summary": "A MySQL database project for an e-commerce and multi-level distributor workflow, with generated data and analytical SQL.",
       "role": "Contributed to a group database-systems project covering relational design, seed generation, and SQL analysis.",
-      "tags": ["MySQL", "SQL", "Python", "Data modeling"],
-      "flow": ["Schema", "Synthetic seed data", "Queries & views", "Plan analysis"],
+      "tags": [
+        "MySQL",
+        "SQL",
+        "Python",
+        "Data modeling"
+      ],
+      "flow": [
+        "Schema",
+        "Synthetic seed data",
+        "Queries & views",
+        "Plan analysis"
+      ],
       "links": [
         {
           "label": "View code",
@@ -898,8 +1228,18 @@
       "signal": "Pretraining & fine-tuning workflows",
       "summary": "EEG representation-learning experiments adapting an existing CBraMod model to ISRUC sleep data.",
       "role": "Adapted data preparation, pretraining and fine-tuning scripts, and patch visualizations around the existing CBraMod architecture.",
-      "tags": ["PyTorch", "EEG", "ISRUC", "Transformers"],
-      "flow": ["EEG preparation", "Patch representation", "Pretraining", "Fine-tuning"],
+      "tags": [
+        "PyTorch",
+        "EEG",
+        "ISRUC",
+        "Transformers"
+      ],
+      "flow": [
+        "EEG preparation",
+        "Patch representation",
+        "Pretraining",
+        "Fine-tuning"
+      ],
       "links": [
         {
           "label": "View code",
@@ -925,7 +1265,15 @@
   "resumeSkills": [
     {
       "title": "Languages",
-      "items": ["Python", "SQL", "Java", "JavaScript", "TypeScript", "R", "Scala"]
+      "items": [
+        "Python",
+        "SQL",
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "R",
+        "Scala"
+      ]
     },
     {
       "title": "Deep learning & architectures",
@@ -1005,7 +1353,14 @@
     },
     {
       "title": "Frontend & applications",
-      "items": ["React", "HTML", "CSS", "Tailwind CSS", "Streamlit", "Gradio"]
+      "items": [
+        "React",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Streamlit",
+        "Gradio"
+      ]
     },
     {
       "title": "Databases & persistence",
