@@ -152,7 +152,7 @@
         "Authored Oracle SQL queries and developed joins, aggregations, stored procedures, and analytical views to extract relational data, reconcile records, and support operational reporting; also worked with MySQL databases for application-level data access.",
         "Automated recurring data preparation, reconciliation, and validation activities with Python scripts, reducing repetitive manual steps across multi-system workflows.",
         "Supported Java and Spring Boot REST services and React and TypeScript components used to expose application functionality and access enterprise data.",
-        "Diagnosed data-processing failures and service issues using Datadog and Elasticsearch, and partnered with engineering teams on production troubleshooting and issue resolution; also supported deployments on AWS infrastructure."
+        "Diagnosed data-processing failures and service issues using Datadog and Elasticsearch, and documented root causes, and partnered with engineering teams on production troubleshooting and issue resolution; also supported deployments on AWS infrastructure."
       ]
     }
   ],
