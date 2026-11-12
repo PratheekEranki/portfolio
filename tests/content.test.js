@@ -42,7 +42,7 @@ test('RAG comparison agrees with downloadable results', () => {
 test('confirmed dates and corrected stock-model ranking stay consistent', () => {
   assert.equal(
     content.experience.find((p) => p.id === 'cognizant').period,
-    'October 2021 – April 2024',
+    'January 2022 – November 2023',
   );
   assert.equal(
     content.experience.find((p) => p.id === 'memphis').period,
